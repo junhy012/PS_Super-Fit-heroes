@@ -180,3 +180,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 5
   jumpHeight: 10
+  strength: 3
+  agility: 5
+  stamina: 5
