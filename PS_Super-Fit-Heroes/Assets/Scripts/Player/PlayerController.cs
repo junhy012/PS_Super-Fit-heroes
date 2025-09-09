@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpHeight = 10f;
 
+    
     private Rigidbody2D rigidBody2D;
 
     private bool isGround;
