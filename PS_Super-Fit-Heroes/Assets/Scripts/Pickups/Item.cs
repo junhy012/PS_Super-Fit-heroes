@@ -1,4 +1,5 @@
 using System;
+using System.Transactions;
 using UnityEngine;
 public enum Items
 {
@@ -18,45 +19,55 @@ public enum Items
 public class Item : MonoBehaviour
 {
     public Items items;
-    public int value = 1;
+    public int value;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        switch (items)
+        if (other.CompareTag("Player"))
         {
-            case Items.Fries:
-                Debug.Log("Agility " + value);
-                break;
-            case Items.Burger:
-                Debug.Log("Strength " + value);
-                break;
-            case Items.Pizza:
-                Debug.Log("Health " + value);
-                break;
-            case Items.Chocolate:
-                Debug.Log("Stamina " + value);
-                break;
-            case Items.IceCream:
-                Debug.Log("All " + -value);
-                break;
-            case Items.Chicken:
-                Debug.Log("Agility " + value);
-                break;
-            case Items.Steak:
-                Debug.Log("Strength " + value);
-                break;
-            case Items.Broccoli:
-                Debug.Log("Health " + value);
-                break;
-            case Items.Apple:
-                Debug.Log("Stamina " + value);
-                break;
-            case Items.Banana:
-                Debug.Log("All " + value);
-                break;
+            PlayerController pc = other.GetComponent<PlayerController>();
             
+            switch (items)
+            {
+                case Items.Fries:
+                    pc.ChangeAgility(value);
+                    break;
+                case Items.Burger:
+                    pc.ChangeStrength(value);
+                    break;
+                case Items.Pizza:
+                    pc.ChangeStamina(value);
+                    break;
+                case Items.Chocolate:
+                    pc.ChangeAgility(value);
+                    pc.ChangeStrength(value);
+                    pc.ChangeStamina(value);
+                    break;
+                case Items.IceCream:
+                    Debug.Log("All " + -value);
+                    break;
+                case Items.Chicken:
+                    pc.ChangeAgility(value);
+                    break;
+                case Items.Steak:
+                    pc.ChangeStrength(value);
+                    break;
+                case Items.Broccoli:
+                    pc.ChangeStamina(value);
+                    break;
+                case Items.Apple:
+                    pc.ChangeAgility(value);
+                    pc.ChangeStrength(value);
+                    pc.ChangeStamina(value);
+                    break;
+                case Items.Banana:
+                    Debug.Log("All " + value);
+                    break;
+            
+            }
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
