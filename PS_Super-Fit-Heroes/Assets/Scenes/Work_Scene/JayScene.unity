@@ -393,7 +393,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1557051318
+--- !u!1001 &1825043041
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -405,21 +405,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3976514527154310558, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
-      propertyPath: agility
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3976514527154310558, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
-      propertyPath: stamina
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3976514527154310558, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
-      propertyPath: strength
-      value: 3
+    - target: {fileID: 2739399116512215323, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6111709087182373330, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
-      propertyPath: m_GravityScale
-      value: 2
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6855382583855476184, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -472,4 +464,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 606269870}
   - {fileID: 973611969}
-  - {fileID: 1557051318}
+  - {fileID: 1825043041}
