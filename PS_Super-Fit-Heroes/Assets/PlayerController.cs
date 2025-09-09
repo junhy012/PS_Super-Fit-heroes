@@ -5,14 +5,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public float jumpHeight = 10f;
-    public float attackPower = 1f;
+    private float moveSpeed = 5f;
+    private float jumpHeight = 10f;
+    private float attackPower = 1f;
 
-    public int maxHp = 3; // hp
-    private int currentHp;
-    public int maxStamina = 3;
-    private int currentStamina;
+    private int maxHp = 3; // hp
+    private float currentHp;
+    private int maxStamina = 3;
+    public float currentStamina;
 
     public int strength = 3; // power 
     public int agility = 3; // affect moveSpeed and jumpHeight
@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rigidBody2D;
     private bool isGround;
 
+    private bool isUsingStamina = false;
+    private bool isTired = false;
 
     void Start()
     {
@@ -46,6 +48,10 @@ public class PlayerController : MonoBehaviour
             isGround = false;
 
         InputManagement();
+
+        if (!isUsingStamina)
+            ResetStamina();
+
     }
 
     void InputManagement()
@@ -53,26 +59,30 @@ public class PlayerController : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
 
         if (horizontal != 0)
-            Move(horizontal);
+            Move(moveSpeed, horizontal);
 
         if (isGround)
         {
             if (Input.GetKeyDown(KeyCode.Space))
                 Jump();
-            if (Input.GetKeyDown(KeyCode.LeftShift)) // Sprint
-                Sprint();
+            if (Input.GetKey(KeyCode.LeftShift) && currentStamina > 0 && horizontal != 0 && !isTired) // Sprint
+                Sprint(horizontal);
+            else
+                isUsingStamina = false;
         }
-        
+
         if (Input.GetKeyDown(KeyCode.A) && canAttack)
             Attack();
         if (Input.GetKeyDown(KeyCode.Z)) // Dash
             Dash(horizontal);
     }
 
-    private void Move(float value)
+    private void Move(float speed, float dir)
     {
-        transform.localScale = new Vector3(value, 1, 1);
-        transform.Translate(value * moveSpeed * Time.deltaTime, 0, 0);
+        if (dir == 0)
+            return;
+        transform.localScale = new Vector3(dir, 1, 1);
+        transform.Translate(dir * speed * Time.deltaTime, 0, 0);
     }
 
     private void Jump()
@@ -81,21 +91,41 @@ public class PlayerController : MonoBehaviour
         rigidBody2D.AddForce(transform.up * (jumpHeight / 2), ForceMode2D.Impulse);
     }
 
-    private void Sprint()
+    private void Sprint(float dir)
     {
+        isUsingStamina = true;
+        currentStamina -= Time.deltaTime * 3f;
+        currentStamina = Mathf.Clamp(currentStamina, 0, maxStamina);
+
+        if (currentStamina <= 0.1f)
+        {
+            isTired = true;
+            isUsingStamina = false;
+            return;
+        }
+        
+        Move(moveSpeed * 1.2f, dir);
     }
 
     private void Dash(float dir)
     {
     }
 
+    public void ResetStamina()
+    {
+        currentStamina += Time.deltaTime * 1.5f;
+        currentStamina = Mathf.Clamp(currentStamina, 0, maxStamina);
+
+        if (currentStamina >= maxStamina)
+            isTired = false;
+    }
     public void TakeDamage()
     {
         currentHp -= 1;
     }
-
     
     bool canAttack = true;
+
     public void Attack()
     {
         canAttack = false;
@@ -110,6 +140,7 @@ public class PlayerController : MonoBehaviour
     }
     
     #region stat
+
     public void ChangeStrength(int value)
     {
         strength += value;
@@ -128,7 +159,7 @@ public class PlayerController : MonoBehaviour
     {
         stamina += value;
         stamina = Mathf.Clamp(stamina, 1, 15);
-        CheckLevel(2,stamina);
+        CheckLevel(2, stamina);
     }
 
     private void CheckLevel(int statIndex, int stat)
@@ -171,5 +202,6 @@ public class PlayerController : MonoBehaviour
                 break;
         }
     }
+
     #endregion
 }
