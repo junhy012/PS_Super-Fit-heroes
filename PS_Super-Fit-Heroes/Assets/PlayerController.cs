@@ -1,24 +1,39 @@
 using System;
+using System.Collections;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private float moveSpeed = 5f;
-    private float jumpHeight = 10f;
+    public float moveSpeed = 5f;
+    public float jumpHeight = 10f;
+    public float attackPower = 1f;
 
-    private Rigidbody2D rigidBody2D;
-    private bool isGround;
+    public int maxHp = 3; // hp
+    private int currentHp;
+    public int maxStamina = 3;
+    private int currentStamina;
 
-    public int Hp = 3; // hp
     public int strength = 3; // power 
     public int agility = 3; // affect moveSpeed and jumpHeight
     public int stamina = 3; // stamina -> Dash or sprint
 
-    private int[] nextLevel = new int[] { 3, 6, 10, 15 };
-    private int[] currentLevels = new[] { 0, 0, 0, 0 }; //order -> hp, strength, agility, stamina
-    
+    private int[] nextLevels = { 3, 6, 10, 15 };
+    private int[] currentLevels = new int[3]; //order -> strength, agility, stamina
+
+    private Rigidbody2D rigidBody2D;
+    private bool isGround;
+
+
     void Start()
     {
+        currentLevels[0] = 1; // strength
+        currentLevels[1] = 1; // agility
+        currentLevels[2] = 1; // stamina
+
+        currentHp = maxHp;
+        currentStamina = stamina;
+
         rigidBody2D = GetComponent<Rigidbody2D>();
     }
 
@@ -46,13 +61,17 @@ public class PlayerController : MonoBehaviour
                 Jump();
             if (Input.GetKeyDown(KeyCode.LeftShift)) // Sprint
                 Sprint();
-            if (Input.GetKeyDown(KeyCode.Z)) // Dash
-                Dash(horizontal);
         }
+        
+        if (Input.GetKeyDown(KeyCode.A) && canAttack)
+            Attack();
+        if (Input.GetKeyDown(KeyCode.Z)) // Dash
+            Dash(horizontal);
     }
 
     private void Move(float value)
     {
+        transform.localScale = new Vector3(value, 1, 1);
         transform.Translate(value * moveSpeed * Time.deltaTime, 0, 0);
     }
 
@@ -70,49 +89,87 @@ public class PlayerController : MonoBehaviour
     {
     }
 
-    public void ChangeHp(int value)
+    public void TakeDamage()
     {
-        Hp += value;
-        Hp = Mathf.Clamp(Hp, 1, 15);
-        
-        if (Hp >= nextLevel[currentLevels[0]])
-        {
-            
-        }
+        currentHp -= 1;
+    }
+
+    
+    bool canAttack = true;
+    public void Attack()
+    {
+        canAttack = false;
+        Debug.Log("attack!");
+        StartCoroutine(AttackCoolTime());
+    }
+
+    IEnumerator AttackCoolTime()
+    {
+        yield return new WaitForSeconds(1f);
+        canAttack = true;
     }
     
+    #region stat
     public void ChangeStrength(int value)
     {
         strength += value;
         strength = Mathf.Clamp(strength, 1, 15);
-        
-        if (strength >= nextLevel[currentLevels[1]])
-        {
-            
-        }
+        CheckLevel(0, strength);
     }
-    
+
     public void ChangeAgility(int value)
     {
         agility += value;
         agility = Mathf.Clamp(agility, 1, 15);
-
-        if (agility >= nextLevel[currentLevels[2]])
-        {
-            
-        }
+        CheckLevel(1, agility);
     }
-    
+
     public void ChangeStamina(int value)
     {
         stamina += value;
         stamina = Mathf.Clamp(stamina, 1, 15);
-        
-        if (stamina >= nextLevel[currentLevels[3]])
+        CheckLevel(2,stamina);
+    }
+
+    private void CheckLevel(int statIndex, int stat)
+    {
+        int newLevel = 0;
+
+        for (int i = 0; i < nextLevels.Length; i++)
         {
-            
+            if (nextLevels[i] <= stat)
+            {
+                newLevel += 1;
+            }
+        }
+
+        if (currentLevels[statIndex] < newLevel)
+        {
+            currentLevels[statIndex] += 1;
+            UpdateStat(statIndex, 1);
+        }
+        else if (currentLevels[statIndex] > newLevel)
+        {
+            currentLevels[statIndex] -= 1;
+            UpdateStat(statIndex, -1);
         }
     }
 
-    
+    private void UpdateStat(int statIndex, int value)
+    {
+        switch (statIndex)
+        {
+            case 0:
+                attackPower += value;
+                break;
+            case 1:
+                moveSpeed += value;
+                jumpHeight += value;
+                break;
+            case 2:
+                maxStamina += value;
+                break;
+        }
+    }
+    #endregion
 }
