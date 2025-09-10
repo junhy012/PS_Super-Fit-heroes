@@ -9,10 +9,16 @@ public class PlayerController : MonoBehaviour
     private float jumpHeight = 10f;
     private float attackPower = 1f;
 
-    private int maxHp = 3; // hp
-    private float currentHp;
-    private int maxStamina = 3;
-    private float currentStamina;
+    private int _maxHp = 3; // hp
+    private float _currentHp;
+    private int _maxStamina = 3;
+    private float _currentStamina;
+
+    public int maxHp { get { return _maxHp; } }
+    public float currentHp { get { return _currentHp; } }
+    public int maxStamina { get { return _maxStamina; } }
+    public float currentStamina { get { return _currentStamina; } }
+    
 
     public int strength = 3; // power 
     public int agility = 3; // affect moveSpeed and jumpHeight
@@ -35,8 +41,8 @@ public class PlayerController : MonoBehaviour
         currentLevels[2] = 1; // stamina
         currentLevels[3] = 1; // health
 
-        currentHp = maxHp;
-        currentStamina = stamina;
+        _currentHp = _maxHp;
+        _currentStamina = stamina;
 
         rigidBody2D = GetComponent<Rigidbody2D>();
     }
@@ -67,7 +73,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
                 Jump();
-            if (Input.GetKey(KeyCode.LeftShift) && currentStamina > 0 && horizontal != 0 && !isTired) // Sprint
+            if (Input.GetKey(KeyCode.LeftShift) && _currentStamina > 0 && horizontal != 0 && !isTired) // Sprint
                 Sprint(horizontal);
             else
                 isUsingStamina = false;
@@ -96,10 +102,10 @@ public class PlayerController : MonoBehaviour
     private void Sprint(float dir)
     {
         isUsingStamina = true;
-        currentStamina -= Time.deltaTime * 3f;
-        currentStamina = Mathf.Clamp(currentStamina, 0, maxStamina);
+        _currentStamina -= Time.deltaTime * 3f;
+        _currentStamina = Mathf.Clamp(_currentStamina, 0, _maxStamina);
 
-        if (currentStamina <= 0.1f)
+        if (_currentStamina <= 0.1f)
         {
             isTired = true;
             isUsingStamina = false;
@@ -115,15 +121,15 @@ public class PlayerController : MonoBehaviour
 
     public void ResetStamina()
     {
-        currentStamina += Time.deltaTime * 1.5f;
-        currentStamina = Mathf.Clamp(currentStamina, 0, maxStamina);
+        _currentStamina += Time.deltaTime * 1.5f;
+        _currentStamina = Mathf.Clamp(_currentStamina, 0, _maxStamina);
 
-        if (currentStamina >= maxStamina)
+        if (_currentStamina >= _maxStamina)
             isTired = false;
     }
     public void TakeDamage()
     {
-        currentHp -= 1;
+        _currentHp -= 1;
     }
     
     bool canAttack = true;
@@ -206,10 +212,10 @@ public class PlayerController : MonoBehaviour
                 jumpHeight += value;
                 break;
             case 2:
-                maxStamina += value;
+                _maxStamina += value;
                 break;
             case 3:
-                maxHp += value;
+                _maxHp += value;
                 break;
         }
     }
