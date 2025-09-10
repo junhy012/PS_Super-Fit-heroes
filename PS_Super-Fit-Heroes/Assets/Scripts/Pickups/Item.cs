@@ -44,7 +44,7 @@ public class Item : MonoBehaviour
                     pc.ChangeStamina(value);
                     break;
                 case Items.IceCream:
-                    pc.ChangeHp(value);
+                    pc.ChangeHealth(value);
                     break;
                 case Items.Chicken:
                     pc.ChangeAgility(value);
@@ -61,7 +61,7 @@ public class Item : MonoBehaviour
                     pc.ChangeStamina(value);
                     break;
                 case Items.Banana:
-                    pc.ChangeHp(value);
+                    pc.ChangeHealth(value);
                     break;
             
             }
