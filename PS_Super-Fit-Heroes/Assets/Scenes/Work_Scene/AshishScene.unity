@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 36768177}
   - component: {fileID: 36768178}
+  - component: {fileID: 36768179}
   m_Layer: 0
   m_Name: Triangle (46)
   m_TagString: Untagged
@@ -209,6 +210,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &36768179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36768176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &74900872
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,6 +369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 187100920}
   - component: {fileID: 187100921}
+  - component: {fileID: 187100922}
   m_Layer: 0
   m_Name: Triangle (50)
   m_TagString: Untagged
@@ -436,6 +450,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &187100922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187100919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &210176482
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 210176483}
   - component: {fileID: 210176484}
+  - component: {fileID: 210176485}
   m_Layer: 0
   m_Name: Triangle (11)
   m_TagString: Untagged
@@ -526,6 +553,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &210176485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210176482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &217943843
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,6 +849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 244336668}
   - component: {fileID: 244336669}
+  - component: {fileID: 244336670}
   m_Layer: 0
   m_Name: Triangle (39)
   m_TagString: Untagged
@@ -890,6 +930,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &244336670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244336667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &274209235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,6 +1089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 301794098}
   - component: {fileID: 301794099}
+  - component: {fileID: 301794100}
   m_Layer: 0
   m_Name: Triangle (19)
   m_TagString: Untagged
@@ -1117,6 +1170,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &301794100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301794097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &331324116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,6 +1329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 375638689}
   - component: {fileID: 375638690}
+  - component: {fileID: 375638691}
   m_Layer: 0
   m_Name: Triangle (6)
   m_TagString: Untagged
@@ -1344,6 +1410,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &375638691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375638688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &387042009
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,6 +1432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 387042010}
   - component: {fileID: 387042011}
+  - component: {fileID: 387042012}
   m_Layer: 0
   m_Name: Triangle (33)
   m_TagString: Untagged
@@ -1434,6 +1513,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &387042012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387042009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &397302630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,6 +1809,7 @@ GameObject:
   m_Component:
   - component: {fileID: 402664626}
   - component: {fileID: 402664627}
+  - component: {fileID: 402664628}
   m_Layer: 0
   m_Name: Triangle (31)
   m_TagString: Untagged
@@ -1798,6 +1890,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &402664628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402664625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &444579485
 GameObject:
   m_ObjectHideFlags: 0
@@ -2356,6 +2460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 592858464}
   - component: {fileID: 592858465}
+  - component: {fileID: 592858466}
   m_Layer: 0
   m_Name: Triangle (53)
   m_TagString: Untagged
@@ -2436,6 +2541,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &592858466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592858463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &611135389
 GameObject:
   m_ObjectHideFlags: 0
@@ -2446,6 +2563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 611135390}
   - component: {fileID: 611135391}
+  - component: {fileID: 611135392}
   m_Layer: 0
   m_Name: Triangle (49)
   m_TagString: Untagged
@@ -2526,6 +2644,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &611135392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611135389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &627853717
 GameObject:
   m_ObjectHideFlags: 0
@@ -2673,6 +2803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 669535416}
   - component: {fileID: 669535417}
+  - component: {fileID: 669535418}
   m_Layer: 0
   m_Name: Triangle (2)
   m_TagString: Untagged
@@ -2753,6 +2884,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &669535418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669535415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &704567141
 GameObject:
   m_ObjectHideFlags: 0
@@ -2763,6 +2906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 704567142}
   - component: {fileID: 704567143}
+  - component: {fileID: 704567144}
   m_Layer: 0
   m_Name: Triangle (22)
   m_TagString: Untagged
@@ -2843,6 +2987,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &704567144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704567141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &709146472
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,6 +3283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 727303294}
   - component: {fileID: 727303295}
+  - component: {fileID: 727303296}
   m_Layer: 0
   m_Name: Triangle (23)
   m_TagString: Untagged
@@ -3207,6 +3364,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &727303296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727303293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &727387243
 GameObject:
   m_ObjectHideFlags: 0
@@ -3992,6 +4161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 871302082}
   - component: {fileID: 871302083}
+  - component: {fileID: 871302084}
   m_Layer: 0
   m_Name: Triangle (35)
   m_TagString: Untagged
@@ -4072,6 +4242,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &871302084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871302081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &886128309
 GameObject:
   m_ObjectHideFlags: 0
@@ -4219,6 +4401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 928370472}
   - component: {fileID: 928370473}
+  - component: {fileID: 928370474}
   m_Layer: 0
   m_Name: Triangle (28)
   m_TagString: Untagged
@@ -4299,6 +4482,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &928370474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928370471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &968009627
 GameObject:
   m_ObjectHideFlags: 0
@@ -4720,6 +4915,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1049922161}
   - component: {fileID: 1049922162}
+  - component: {fileID: 1049922163}
   m_Layer: 0
   m_Name: Triangle (30)
   m_TagString: Untagged
@@ -4800,6 +4996,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1049922163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049922160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1054046128
 GameObject:
   m_ObjectHideFlags: 0
@@ -4810,6 +5018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1054046129}
   - component: {fileID: 1054046130}
+  - component: {fileID: 1054046131}
   m_Layer: 0
   m_Name: Triangle (3)
   m_TagString: Untagged
@@ -4890,6 +5099,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1054046131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054046128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1054439326
 GameObject:
   m_ObjectHideFlags: 0
@@ -5037,6 +5258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1071266040}
   - component: {fileID: 1071266041}
+  - component: {fileID: 1071266042}
   m_Layer: 0
   m_Name: Triangle (5)
   m_TagString: Untagged
@@ -5117,6 +5339,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1071266042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071266039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1073713135
 GameObject:
   m_ObjectHideFlags: 0
@@ -5265,6 +5499,7 @@ GameObject:
   - component: {fileID: 1091265584}
   - component: {fileID: 1091265583}
   - component: {fileID: 1091265585}
+  - component: {fileID: 1091265586}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -5428,7 +5663,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -5444,6 +5679,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1091265586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091265582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1116951980
 GameObject:
   m_ObjectHideFlags: 0
@@ -5454,6 +5701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1116951981}
   - component: {fileID: 1116951982}
+  - component: {fileID: 1116951983}
   m_Layer: 0
   m_Name: Triangle (51)
   m_TagString: Untagged
@@ -5534,6 +5782,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1116951983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116951980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1123740181
 GameObject:
   m_ObjectHideFlags: 0
@@ -5544,6 +5804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1123740182}
   - component: {fileID: 1123740183}
+  - component: {fileID: 1123740184}
   m_Layer: 0
   m_Name: Triangle (8)
   m_TagString: Untagged
@@ -5624,6 +5885,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1123740184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123740181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1128631908
 GameObject:
   m_ObjectHideFlags: 0
@@ -5634,6 +5907,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1128631909}
   - component: {fileID: 1128631910}
+  - component: {fileID: 1128631911}
   m_Layer: 0
   m_Name: Triangle (40)
   m_TagString: Untagged
@@ -5714,6 +5988,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1128631911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128631908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1130915700
 GameObject:
   m_ObjectHideFlags: 0
@@ -5724,6 +6010,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1130915701}
   - component: {fileID: 1130915702}
+  - component: {fileID: 1130915703}
   m_Layer: 0
   m_Name: Triangle (44)
   m_TagString: Untagged
@@ -5804,6 +6091,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1130915703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130915700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1132476026
 GameObject:
   m_ObjectHideFlags: 0
@@ -5814,6 +6113,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1132476027}
   - component: {fileID: 1132476028}
+  - component: {fileID: 1132476029}
   m_Layer: 0
   m_Name: Triangle (13)
   m_TagString: Untagged
@@ -5894,6 +6194,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1132476029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132476026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1139449194
 GameObject:
   m_ObjectHideFlags: 0
@@ -5904,6 +6216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1139449195}
   - component: {fileID: 1139449196}
+  - component: {fileID: 1139449197}
   m_Layer: 0
   m_Name: Triangle (45)
   m_TagString: Untagged
@@ -5984,6 +6297,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1139449197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139449194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1189271229
 GameObject:
   m_ObjectHideFlags: 0
@@ -6268,6 +6593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1203629024}
   - component: {fileID: 1203629025}
+  - component: {fileID: 1203629026}
   m_Layer: 0
   m_Name: Triangle (34)
   m_TagString: Untagged
@@ -6348,6 +6674,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1203629026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203629023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1209627506
 GameObject:
   m_ObjectHideFlags: 0
@@ -6495,6 +6833,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1226600495}
   - component: {fileID: 1226600496}
+  - component: {fileID: 1226600497}
   m_Layer: 0
   m_Name: Triangle (27)
   m_TagString: Untagged
@@ -6575,6 +6914,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1226600497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226600494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1251912633
 GameObject:
   m_ObjectHideFlags: 0
@@ -6585,6 +6936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1251912634}
   - component: {fileID: 1251912635}
+  - component: {fileID: 1251912636}
   m_Layer: 0
   m_Name: Triangle (16)
   m_TagString: Untagged
@@ -6665,6 +7017,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1251912636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251912633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1278039439
 GameObject:
   m_ObjectHideFlags: 0
@@ -6812,6 +7176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1278540560}
   - component: {fileID: 1278540561}
+  - component: {fileID: 1278540562}
   m_Layer: 0
   m_Name: Triangle (10)
   m_TagString: Untagged
@@ -6892,6 +7257,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1278540562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278540559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1281459211
 GameObject:
   m_ObjectHideFlags: 0
@@ -6902,6 +7279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1281459212}
   - component: {fileID: 1281459213}
+  - component: {fileID: 1281459214}
   m_Layer: 0
   m_Name: Triangle (7)
   m_TagString: Untagged
@@ -6982,6 +7360,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1281459214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281459211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1283757738
 GameObject:
   m_ObjectHideFlags: 0
@@ -6992,6 +7382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1283757739}
   - component: {fileID: 1283757740}
+  - component: {fileID: 1283757741}
   m_Layer: 0
   m_Name: Triangle (24)
   m_TagString: Untagged
@@ -7072,6 +7463,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1283757741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283757738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!4 &1284851247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6855382583855476184, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
@@ -7087,6 +7490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1285574490}
   - component: {fileID: 1285574491}
+  - component: {fileID: 1285574492}
   m_Layer: 0
   m_Name: Triangle (17)
   m_TagString: Untagged
@@ -7167,6 +7571,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1285574492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285574489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1290741702
 GameObject:
   m_ObjectHideFlags: 0
@@ -7177,6 +7593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1290741703}
   - component: {fileID: 1290741704}
+  - component: {fileID: 1290741705}
   m_Layer: 0
   m_Name: Triangle (47)
   m_TagString: Untagged
@@ -7257,6 +7674,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1290741705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290741702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1316488983
 GameObject:
   m_ObjectHideFlags: 0
@@ -7267,6 +7696,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1316488984}
   - component: {fileID: 1316488985}
+  - component: {fileID: 1316488986}
   m_Layer: 0
   m_Name: Triangle (36)
   m_TagString: Untagged
@@ -7347,6 +7777,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1316488986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316488983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1328591953
 GameObject:
   m_ObjectHideFlags: 0
@@ -7633,6 +8075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2739399116512215323, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6855382583855476184, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 52.7
@@ -7692,6 +8138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1344905950}
   - component: {fileID: 1344905951}
+  - component: {fileID: 1344905952}
   m_Layer: 0
   m_Name: Triangle (4)
   m_TagString: Untagged
@@ -7772,6 +8219,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1344905952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344905949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1383364960
 GameObject:
   m_ObjectHideFlags: 0
@@ -7919,6 +8378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1396761611}
   - component: {fileID: 1396761612}
+  - component: {fileID: 1396761613}
   m_Layer: 0
   m_Name: Triangle (32)
   m_TagString: Untagged
@@ -7999,6 +8459,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1396761613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396761610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1425978302
 GameObject:
   m_ObjectHideFlags: 0
@@ -8009,6 +8481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1425978303}
   - component: {fileID: 1425978304}
+  - component: {fileID: 1425978305}
   m_Layer: 0
   m_Name: Triangle (26)
   m_TagString: Untagged
@@ -8089,6 +8562,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1425978305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425978302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1443916023
 GameObject:
   m_ObjectHideFlags: 0
@@ -8099,6 +8584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1443916024}
   - component: {fileID: 1443916025}
+  - component: {fileID: 1443916026}
   m_Layer: 0
   m_Name: Triangle (52)
   m_TagString: Untagged
@@ -8179,6 +8665,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1443916026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443916023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1448240128
 GameObject:
   m_ObjectHideFlags: 0
@@ -8924,6 +9422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1566618744}
   - component: {fileID: 1566618745}
+  - component: {fileID: 1566618746}
   m_Layer: 0
   m_Name: Triangle (12)
   m_TagString: Untagged
@@ -9004,6 +9503,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1566618746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566618743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1604588175
 GameObject:
   m_ObjectHideFlags: 0
@@ -9438,6 +9949,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1632227588}
   - component: {fileID: 1632227589}
+  - component: {fileID: 1632227590}
   m_Layer: 0
   m_Name: Triangle (21)
   m_TagString: Untagged
@@ -9518,6 +10030,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1632227590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632227587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1633069878
 GameObject:
   m_ObjectHideFlags: 0
@@ -9802,6 +10326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1664665232}
   - component: {fileID: 1664665233}
+  - component: {fileID: 1664665234}
   m_Layer: 0
   m_Name: Triangle (25)
   m_TagString: Untagged
@@ -9882,6 +10407,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1664665234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664665231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1676365377
 GameObject:
   m_ObjectHideFlags: 0
@@ -9892,6 +10429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1676365378}
   - component: {fileID: 1676365379}
+  - component: {fileID: 1676365380}
   m_Layer: 0
   m_Name: Triangle (43)
   m_TagString: Untagged
@@ -9972,6 +10510,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1676365380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676365377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1692743084
 GameObject:
   m_ObjectHideFlags: 0
@@ -10119,6 +10669,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1742306313}
   - component: {fileID: 1742306314}
+  - component: {fileID: 1742306315}
   m_Layer: 0
   m_Name: Triangle (15)
   m_TagString: Untagged
@@ -10199,6 +10750,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1742306315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742306312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1764572427
 GameObject:
   m_ObjectHideFlags: 0
@@ -10209,6 +10772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1764572428}
   - component: {fileID: 1764572429}
+  - component: {fileID: 1764572430}
   m_Layer: 0
   m_Name: Triangle (1)
   m_TagString: Untagged
@@ -10289,6 +10853,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1764572430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764572427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1795862239
 GameObject:
   m_ObjectHideFlags: 0
@@ -10710,6 +11286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1866913683}
   - component: {fileID: 1866913684}
+  - component: {fileID: 1866913685}
   m_Layer: 0
   m_Name: Triangle (18)
   m_TagString: Untagged
@@ -10790,6 +11367,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1866913685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866913682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1870632369
 GameObject:
   m_ObjectHideFlags: 0
@@ -10800,6 +11389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1870632370}
   - component: {fileID: 1870632371}
+  - component: {fileID: 1870632372}
   m_Layer: 0
   m_Name: Triangle (9)
   m_TagString: Untagged
@@ -10880,6 +11470,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1870632372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870632369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1875974098
 GameObject:
   m_ObjectHideFlags: 0
@@ -11336,6 +11938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1913565949}
   - component: {fileID: 1913565950}
+  - component: {fileID: 1913565951}
   m_Layer: 0
   m_Name: Triangle (20)
   m_TagString: Untagged
@@ -11416,6 +12019,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1913565951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913565948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1942508115
 GameObject:
   m_ObjectHideFlags: 0
@@ -11426,6 +12041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1942508116}
   - component: {fileID: 1942508117}
+  - component: {fileID: 1942508118}
   m_Layer: 0
   m_Name: Triangle (48)
   m_TagString: Untagged
@@ -11506,6 +12122,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1942508118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942508115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1973700377
 GameObject:
   m_ObjectHideFlags: 0
@@ -11516,6 +12144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1973700378}
   - component: {fileID: 1973700379}
+  - component: {fileID: 1973700380}
   m_Layer: 0
   m_Name: Triangle (42)
   m_TagString: Untagged
@@ -11596,6 +12225,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1973700380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973700377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &1983152140
 GameObject:
   m_ObjectHideFlags: 0
@@ -11743,6 +12384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2024486557}
   - component: {fileID: 2024486558}
+  - component: {fileID: 2024486559}
   m_Layer: 0
   m_Name: Triangle (37)
   m_TagString: Untagged
@@ -11823,6 +12465,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2024486559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024486556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &2038387092
 GameObject:
   m_ObjectHideFlags: 0
@@ -12518,6 +13172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2089998458}
   - component: {fileID: 2089998459}
+  - component: {fileID: 2089998460}
   m_Layer: 0
   m_Name: Triangle (41)
   m_TagString: Untagged
@@ -12598,6 +13253,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2089998460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089998457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &2105847490
 GameObject:
   m_ObjectHideFlags: 0
@@ -12608,6 +13275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2105847491}
   - component: {fileID: 2105847492}
+  - component: {fileID: 2105847493}
   m_Layer: 0
   m_Name: Triangle (29)
   m_TagString: Untagged
@@ -12688,6 +13356,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2105847493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105847490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &2119364029
 GameObject:
   m_ObjectHideFlags: 0
@@ -12698,6 +13378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2119364030}
   - component: {fileID: 2119364031}
+  - component: {fileID: 2119364032}
   m_Layer: 0
   m_Name: Triangle (38)
   m_TagString: Untagged
@@ -12778,6 +13459,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2119364032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119364029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &2127111183
 GameObject:
   m_ObjectHideFlags: 0
@@ -12788,6 +13481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2127111184}
   - component: {fileID: 2127111185}
+  - component: {fileID: 2127111186}
   m_Layer: 0
   m_Name: Triangle (14)
   m_TagString: Untagged
@@ -12868,6 +13562,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2127111186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127111183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1 &2145280951
 GameObject:
   m_ObjectHideFlags: 0
