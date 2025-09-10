@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private float moveSpeed = 5f;
-    private float jumpHeight = 10f;
+    private float jumpHeight = 20f;
     private float attackPower = 1f;
 
     private int _maxHp = 3; // hp
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     public int health = 3;
 
     private int[] nextLevels = { 3, 6, 10, 15 };
-    private int[] currentLevels = new int[4]; //order -> strength, agility, stamina, health
+    [SerializeField] private int[] currentLevels = new int[4]; //order -> strength, agility, stamina, health
 
     private Rigidbody2D rigidBody2D;
     private bool isGround;
@@ -73,12 +73,12 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
                 Jump();
-            if (Input.GetKey(KeyCode.LeftShift) && _currentStamina > 0 && horizontal != 0 && !isTired) // Sprint
-                Sprint(horizontal);
-            else
-                isUsingStamina = false;
         }
 
+        if (Input.GetKey(KeyCode.LeftShift) && _currentStamina > 0 && horizontal != 0 && !isTired) // Sprint
+            Sprint(horizontal);
+        else
+            isUsingStamina = false;
         if (Input.GetKeyDown(KeyCode.A) && canAttack)
             Attack();
         if (Input.GetKeyDown(KeyCode.Z)) // Dash
