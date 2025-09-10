@@ -12,14 +12,15 @@ public class PlayerController : MonoBehaviour
     private int maxHp = 3; // hp
     private float currentHp;
     private int maxStamina = 3;
-    public float currentStamina;
+    private float currentStamina;
 
     public int strength = 3; // power 
     public int agility = 3; // affect moveSpeed and jumpHeight
     public int stamina = 3; // stamina -> Dash or sprint
+    public int health = 3;
 
     private int[] nextLevels = { 3, 6, 10, 15 };
-    private int[] currentLevels = new int[3]; //order -> strength, agility, stamina
+    private int[] currentLevels = new int[4]; //order -> strength, agility, stamina, health
 
     private Rigidbody2D rigidBody2D;
     private bool isGround;
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
         currentLevels[0] = 1; // strength
         currentLevels[1] = 1; // agility
         currentLevels[2] = 1; // stamina
+        currentLevels[3] = 1; // health
 
         currentHp = maxHp;
         currentStamina = stamina;
@@ -162,6 +164,12 @@ public class PlayerController : MonoBehaviour
         CheckLevel(2, stamina);
     }
 
+    public void ChangeHealth(int value)
+    {
+        health += value;
+        health = Mathf.Clamp(health, 1, 15);
+        CheckLevel(3, health);
+    }
     private void CheckLevel(int statIndex, int stat)
     {
         int newLevel = 0;
@@ -199,6 +207,9 @@ public class PlayerController : MonoBehaviour
                 break;
             case 2:
                 maxStamina += value;
+                break;
+            case 3:
+                maxHp += value;
                 break;
         }
     }
