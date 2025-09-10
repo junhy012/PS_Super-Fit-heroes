@@ -405,22 +405,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2739399116512215323, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3976514527154310558, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
-      propertyPath: agility
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3976514527154310558, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
-      propertyPath: stamina
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6111709087182373330, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6855382583855476184, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.22
