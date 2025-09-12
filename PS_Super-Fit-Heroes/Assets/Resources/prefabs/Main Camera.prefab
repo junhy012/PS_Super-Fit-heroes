@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2272448423839689733}
   - component: {fileID: 3978554603826059603}
   - component: {fileID: 7858353348752187228}
+  - component: {fileID: 5409172798311959306}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -153,3 +154,16 @@ MonoBehaviour:
   target: {fileID: 0}
   smoothTime: 0.25
   offset: {x: 0, y: 2, z: -10}
+--- !u!114 &5409172798311959306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2471120835088983873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f361afbd6a84f0469c4c5bfb11c44cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraShake
+  isShake: 0

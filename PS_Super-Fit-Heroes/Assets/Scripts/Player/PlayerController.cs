@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private int _maxStamina = 3;
     private float _currentStamina;
 
+    
     public int maxHp
     {
         get { return _maxHp; }
@@ -48,9 +49,10 @@ public class PlayerController : MonoBehaviour
     private bool isUsingStamina = false;
     private bool isTired = false;
 
-    private Rigidbody2D rigidBody2D;
     public HitBox hitBox;
+    CameraShake cameraShake;
 
+    private Rigidbody2D rigidBody2D;
     Animator animator;
 
     public GameObject HitEffect;
@@ -67,6 +69,7 @@ public class PlayerController : MonoBehaviour
 
         rigidBody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        cameraShake = Camera.main.GetComponent<CameraShake>();
     }
 
 
@@ -164,7 +167,6 @@ public class PlayerController : MonoBehaviour
     {
         canAttack = false;
         animator.SetTrigger("attack");
-        // StartCoroutine(AttackCoolTime());
     }
 
     public void E_Attack()
@@ -172,21 +174,16 @@ public class PlayerController : MonoBehaviour
         if (hitBox.target != null)
         {
             Instantiate(HitEffect, hitBox.transform.position, Quaternion.identity);
+            StartCoroutine(cameraShake.ShakeCamera());
             hitBox.target.TakeDamage(attackPower, currentLevels[0]);
         }
     }
-
+    
     public void E_AttackEnd()
     {
         canAttack = true;
     }
-
-// IEnumerator AttackCoolTime()
-    // {
-    //     yield return new WaitForSeconds(1f);
-    //     canAttack = true;
-    // }
-
+    
     #region stat
 
     public void ChangeStrength(int value)
