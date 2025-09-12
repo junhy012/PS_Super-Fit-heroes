@@ -53,6 +53,8 @@ public class PlayerController : MonoBehaviour
 
     Animator animator;
 
+    public GameObject HitEffect;
+
     void Start()
     {
         currentLevels[0] = 1; // strength
@@ -161,7 +163,6 @@ public class PlayerController : MonoBehaviour
     public void Attack()
     {
         canAttack = false;
-
         animator.SetTrigger("attack");
         // StartCoroutine(AttackCoolTime());
     }
@@ -170,6 +171,7 @@ public class PlayerController : MonoBehaviour
     {
         if (hitBox.target != null)
         {
+            Instantiate(HitEffect, hitBox.transform.position, Quaternion.identity);
             hitBox.target.TakeDamage(attackPower, currentLevels[0]);
         }
     }
