@@ -186,6 +186,7 @@ MonoBehaviour:
   health: 3
   currentLevels: 00000000000000000000000000000000
   hitBox: {fileID: 4290000824963347114}
+  HitEffect: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
 --- !u!95 &8892204300934422942
 Animator:
   serializedVersion: 7

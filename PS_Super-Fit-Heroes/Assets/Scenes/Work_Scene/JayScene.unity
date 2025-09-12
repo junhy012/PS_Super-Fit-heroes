@@ -334,10 +334,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3976514527154310558, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
-      propertyPath: HitEffect
-      value: 
-      objectReference: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
     - target: {fileID: 6855382583855476184, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.68
