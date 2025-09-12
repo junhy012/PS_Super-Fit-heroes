@@ -44,7 +44,8 @@ public class Item : MonoBehaviour
                     pc.ChangeStamina(value);
                     break;
                 case Items.IceCream:
-                    Debug.Log("All " + -value);
+                    // pc.ChangeHealth(value);
+                    pc.TakeDamage();
                     break;
                 case Items.Chicken:
                     pc.ChangeAgility(value);
@@ -61,7 +62,7 @@ public class Item : MonoBehaviour
                     pc.ChangeStamina(value);
                     break;
                 case Items.Banana:
-                    Debug.Log("All " + value);
+                    pc.ChangeHealth(value);
                     break;
             
             }
