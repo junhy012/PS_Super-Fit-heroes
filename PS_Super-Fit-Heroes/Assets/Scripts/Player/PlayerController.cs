@@ -51,6 +51,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rigidBody2D;
     public HitBox hitBox;
 
+    Animator animator;
+
     void Start()
     {
         currentLevels[0] = 1; // strength
@@ -62,6 +64,7 @@ public class PlayerController : MonoBehaviour
         _currentStamina = stamina;
 
         rigidBody2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
 
@@ -84,6 +87,9 @@ public class PlayerController : MonoBehaviour
 
         if (horizontal != 0)
             Move(moveSpeed, horizontal);
+        else
+            animator.SetBool("isWalk", false);
+
 
         if (isGround)
         {
@@ -105,7 +111,8 @@ public class PlayerController : MonoBehaviour
     {
         if (dir == 0)
             return;
-        transform.localScale = new Vector3(dir, 1, 1);
+        animator.SetBool("isWalk", true);
+        transform.localScale = new Vector3(dir * 1.8f, 1.8f, 1.8f);
         transform.Translate(dir * speed * Time.deltaTime, 0, 0);
     }
 
@@ -155,19 +162,28 @@ public class PlayerController : MonoBehaviour
     {
         canAttack = false;
 
+        animator.SetTrigger("attack");
+        // StartCoroutine(AttackCoolTime());
+    }
+
+    public void E_Attack()
+    {
         if (hitBox.target != null)
         {
             hitBox.target.TakeDamage(attackPower, currentLevels[0]);
         }
-
-        StartCoroutine(AttackCoolTime());
     }
 
-    IEnumerator AttackCoolTime()
+    public void E_AttackEnd()
     {
-        yield return new WaitForSeconds(1f);
         canAttack = true;
     }
+
+// IEnumerator AttackCoolTime()
+    // {
+    //     yield return new WaitForSeconds(1f);
+    //     canAttack = true;
+    // }
 
     #region stat
 
