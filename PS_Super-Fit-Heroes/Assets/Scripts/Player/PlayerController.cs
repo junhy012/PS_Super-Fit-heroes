@@ -14,11 +14,26 @@ public class PlayerController : MonoBehaviour
     private int _maxStamina = 3;
     private float _currentStamina;
 
-    public int maxHp { get { return _maxHp; } }
-    public float currentHp { get { return _currentHp; } }
-    public int maxStamina { get { return _maxStamina; } }
-    public float currentStamina { get { return _currentStamina; } }
-    
+    public int maxHp
+    {
+        get { return _maxHp; }
+    }
+
+    public float currentHp
+    {
+        get { return _currentHp; }
+    }
+
+    public int maxStamina
+    {
+        get { return _maxStamina; }
+    }
+
+    public float currentStamina
+    {
+        get { return _currentStamina; }
+    }
+
 
     public int strength = 3; // power 
     public int agility = 3; // affect moveSpeed and jumpHeight
@@ -28,11 +43,13 @@ public class PlayerController : MonoBehaviour
     private int[] nextLevels = { 3, 6, 10, 15 };
     [SerializeField] private int[] currentLevels = new int[4]; //order -> strength, agility, stamina, health
 
-    private Rigidbody2D rigidBody2D;
     private bool isGround;
 
     private bool isUsingStamina = false;
     private bool isTired = false;
+
+    private Rigidbody2D rigidBody2D;
+    public HitBox hitBox;
 
     void Start()
     {
@@ -59,7 +76,6 @@ public class PlayerController : MonoBehaviour
 
         if (!isUsingStamina)
             ResetStamina();
-
     }
 
     void InputManagement()
@@ -111,7 +127,7 @@ public class PlayerController : MonoBehaviour
             isUsingStamina = false;
             return;
         }
-        
+
         Move(moveSpeed * 1.2f, dir);
     }
 
@@ -127,17 +143,23 @@ public class PlayerController : MonoBehaviour
         if (_currentStamina >= _maxStamina)
             isTired = false;
     }
+
     public void TakeDamage()
     {
         _currentHp -= 1;
     }
-    
+
     bool canAttack = true;
 
     public void Attack()
     {
         canAttack = false;
-        Debug.Log("attack!");
+
+        if (hitBox.target != null)
+        {
+            hitBox.target.TakeDamage(attackPower, currentLevels[0]);
+        }
+
         StartCoroutine(AttackCoolTime());
     }
 
@@ -146,7 +168,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(1f);
         canAttack = true;
     }
-    
+
     #region stat
 
     public void ChangeStrength(int value)
@@ -176,6 +198,7 @@ public class PlayerController : MonoBehaviour
         health = Mathf.Clamp(health, 1, 15);
         CheckLevel(3, health);
     }
+
     private void CheckLevel(int statIndex, int stat)
     {
         int newLevel = 0;
