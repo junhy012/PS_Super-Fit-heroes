@@ -123,7 +123,7 @@ TextureImporter:
         width: 24
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -145,7 +145,7 @@ TextureImporter:
         width: 28
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,11 +163,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 236
-        y: 47
-        width: 17
-        height: 15
+        y: 43
+        width: 32
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: Orc-Death_3
       rect:
         serializedVersion: 2
-        x: 255
+        x: 335
         y: 43
-        width: 11
-        height: 12
+        width: 32
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -202,55 +202,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Orc-Death_4
-      rect:
-        serializedVersion: 2
-        x: 335
-        y: 43
-        width: 17
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 77069ea8920bba5d0800000000000000
-      internalID: -3050150630142680969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Orc-Death_5
-      rect:
-        serializedVersion: 2
-        x: 355
-        y: 43
-        width: 11
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 54d23fab39e13d820800000000000000
-      internalID: 2941728601448590661
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d0bc618d0297e364d81eefd59c0208ab
     internalID: 0
     vertices: []
     indices: 
@@ -266,6 +222,7 @@ TextureImporter:
       Orc-Death_3: 5977794959670586378
       Orc-Death_4: -3050150630142680969
       Orc-Death_5: 2941728601448590661
+      Orc-Death_6: 327259769
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

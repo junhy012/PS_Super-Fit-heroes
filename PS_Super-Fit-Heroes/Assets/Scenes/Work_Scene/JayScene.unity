@@ -563,6 +563,7 @@ GameObject:
   - component: {fileID: 1905908711}
   - component: {fileID: 1905908715}
   - component: {fileID: 1905908716}
+  - component: {fileID: 1905908717}
   m_Layer: 0
   m_Name: Orc_enemy
   m_TagString: Untagged
@@ -741,6 +742,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ff6b2b150a4f794a90f819dc7564420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
+--- !u!95 &1905908717
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905908710}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 640b7f063ea39ce4ba28bd77996d9151, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

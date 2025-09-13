@@ -195,11 +195,7 @@ public class PlayerController : MonoBehaviour
 
         Move(moveSpeed * 1.5f, dir);
     }
-
-    private void Dash(float dir)
-    {
-    }
-
+    
     public void ResetStamina()
     {
         _currentStamina += Time.deltaTime * 1.5f;
