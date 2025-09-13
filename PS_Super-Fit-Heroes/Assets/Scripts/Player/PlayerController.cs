@@ -21,11 +21,11 @@ public class PlayerController : MonoBehaviour
     private float attackPower = 1f;
 
     private int _maxHp = 3; // hp
-    private float _currentHp;
+    public float _currentHp;
     private int _maxStamina = 3;
     private float _currentStamina;
 
-    private PLAYER_STATE playerState = PLAYER_STATE.IDLE;
+    public PLAYER_STATE playerState = PLAYER_STATE.IDLE;
 
     public int maxHp
     {
@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("isWalk", false);
                 break;
             case PLAYER_STATE.WALK:
-                Move(moveSpeed,direction);
+                Move(moveSpeed, direction);
                 break;
             case PLAYER_STATE.RUN:
                 Sprint(direction);
@@ -122,8 +122,8 @@ public class PlayerController : MonoBehaviour
             case PLAYER_STATE.ATTACK:
                 Attack();
                 break;
-            case PLAYER_STATE.DAMAGED:
-                break;
+            // case PLAYER_STATE.DAMAGED:
+            //     break;
             case PLAYER_STATE.DEATH:
                 break;
         }
@@ -132,8 +132,11 @@ public class PlayerController : MonoBehaviour
     void InputManagement()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
-        
+
         direction = horizontal;
+
+        if (playerState == PLAYER_STATE.DAMAGED)
+            return;
 
         if (horizontal != 0)
         {
@@ -149,9 +152,8 @@ public class PlayerController : MonoBehaviour
         }
         else
             playerState = PLAYER_STATE.IDLE;
-        
 
-        
+
         if (isGround)
         {
             if (Input.GetKeyDown(KeyCode.Space))
@@ -160,14 +162,13 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A) && canAttack)
             playerState = PLAYER_STATE.ATTACK;
-
     }
 
     private void Move(float speed, float dir)
     {
         if (dir == 0)
             return;
-        
+
         animator.SetBool("isWalk", true);
         transform.localScale = new Vector3(dir * 1.8f, 1.8f, 1.8f);
         transform.Translate(dir * speed * Time.deltaTime, 0, 0);
@@ -208,19 +209,28 @@ public class PlayerController : MonoBehaviour
             isTired = false;
     }
 
-    public void TakeDamage()
+    public void TakeDamage(Transform enemyFrom)
     {
-        _currentHp -= 1;
+        if (playerState != PLAYER_STATE.DAMAGED)
+        {
+            _currentHp -= 1;
+            playerState = PLAYER_STATE.DAMAGED;
+            animator.SetTrigger("Damaged");
+            float dir = transform.position.x < enemyFrom.position.x ? 1f : -1f;
+            rigidBody2D.AddForce(Vector2.left * dir * 5f, ForceMode2D.Impulse);
+            rigidBody2D.AddForce(Vector2.up * dir * 5f, ForceMode2D.Impulse);
+        }
     }
+
 
     bool canAttack = true;
 
     public void Attack()
     {
-    
         canAttack = false;
         animator.SetTrigger("attack");
     }
+
 
     public void E_Attack()
     {
@@ -237,6 +247,11 @@ public class PlayerController : MonoBehaviour
     public void E_AttackEnd()
     {
         canAttack = true;
+    }
+
+    public void E_DamagedEnd()
+    {
+        playerState = PLAYER_STATE.IDLE;
     }
 
     #region stat
