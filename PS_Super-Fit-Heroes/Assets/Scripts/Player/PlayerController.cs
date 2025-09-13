@@ -3,6 +3,17 @@ using System.Collections;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
+public enum PLAYER_STATE
+{
+    IDLE,
+    WALK,
+    RUN,
+    JUMP,
+    ATTACK,
+    DAMAGED,
+    DEATH,
+}
+
 public class PlayerController : MonoBehaviour
 {
     private float moveSpeed = 5f;
@@ -14,7 +25,8 @@ public class PlayerController : MonoBehaviour
     private int _maxStamina = 3;
     private float _currentStamina;
 
-    
+    private PLAYER_STATE playerState = PLAYER_STATE.IDLE;
+
     public int maxHp
     {
         get { return _maxHp; }
@@ -48,6 +60,8 @@ public class PlayerController : MonoBehaviour
 
     private bool isUsingStamina = false;
     private bool isTired = false;
+
+    private float direction;
 
     public HitBox hitBox;
     CameraShake cameraShake;
@@ -84,38 +98,76 @@ public class PlayerController : MonoBehaviour
 
         if (!isUsingStamina)
             ResetStamina();
+
+
+        FSM(playerState);
+    }
+
+    void FSM(PLAYER_STATE state)
+    {
+        switch (state)
+        {
+            case PLAYER_STATE.IDLE:
+                animator.SetBool("isWalk", false);
+                break;
+            case PLAYER_STATE.WALK:
+                Move(moveSpeed,direction);
+                break;
+            case PLAYER_STATE.RUN:
+                Sprint(direction);
+                break;
+            case PLAYER_STATE.JUMP:
+                Jump();
+                break;
+            case PLAYER_STATE.ATTACK:
+                Attack();
+                break;
+            case PLAYER_STATE.DAMAGED:
+                break;
+            case PLAYER_STATE.DEATH:
+                break;
+        }
     }
 
     void InputManagement()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
+        
+        direction = horizontal;
 
         if (horizontal != 0)
-            Move(moveSpeed, horizontal);
+        {
+            if (Input.GetKey(KeyCode.LeftShift) && _currentStamina > 0 && !isTired) // sprint
+            {
+                playerState = PLAYER_STATE.RUN;
+            }
+            else
+            {
+                playerState = PLAYER_STATE.WALK;
+                isUsingStamina = false;
+            }
+        }
         else
-            animator.SetBool("isWalk", false);
+            playerState = PLAYER_STATE.IDLE;
+        
 
-
+        
         if (isGround)
         {
             if (Input.GetKeyDown(KeyCode.Space))
-                Jump();
+                playerState = PLAYER_STATE.JUMP;
         }
 
-        if (Input.GetKey(KeyCode.LeftShift) && _currentStamina > 0 && horizontal != 0 && !isTired) // Sprint
-            Sprint(horizontal);
-        else
-            isUsingStamina = false;
         if (Input.GetKeyDown(KeyCode.A) && canAttack)
-            Attack();
-        if (Input.GetKeyDown(KeyCode.Z)) // Dash
-            Dash(horizontal);
+            playerState = PLAYER_STATE.ATTACK;
+
     }
 
     private void Move(float speed, float dir)
     {
         if (dir == 0)
             return;
+        
         animator.SetBool("isWalk", true);
         transform.localScale = new Vector3(dir * 1.8f, 1.8f, 1.8f);
         transform.Translate(dir * speed * Time.deltaTime, 0, 0);
@@ -140,7 +192,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        Move(moveSpeed * 1.2f, dir);
+        Move(moveSpeed * 1.5f, dir);
     }
 
     private void Dash(float dir)
@@ -165,6 +217,7 @@ public class PlayerController : MonoBehaviour
 
     public void Attack()
     {
+    
         canAttack = false;
         animator.SetTrigger("attack");
     }
@@ -173,17 +226,19 @@ public class PlayerController : MonoBehaviour
     {
         if (hitBox.target != null)
         {
+            if (cameraShake != null)
+                StartCoroutine(cameraShake.ShakeCamera());
+
             Instantiate(HitEffect, hitBox.transform.position, Quaternion.identity);
-            StartCoroutine(cameraShake.ShakeCamera());
             hitBox.target.TakeDamage(attackPower, currentLevels[0]);
         }
     }
-    
+
     public void E_AttackEnd()
     {
         canAttack = true;
     }
-    
+
     #region stat
 
     public void ChangeStrength(int value)
