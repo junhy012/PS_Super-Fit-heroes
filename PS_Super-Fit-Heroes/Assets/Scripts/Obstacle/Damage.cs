@@ -2,22 +2,27 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
-    private GameObject player;
-    private Vector2 respawnPoint;   
-
-    private void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player");
-
-        respawnPoint = player.transform.position;
-    }
+    public int damageAmount = 1;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player touch the obstacle!!!");
-            player.transform.position = respawnPoint;
+            Debug.Log("Player hit an obstacle!");
+
+            PlayerController player = other.GetComponent<PlayerController>();
+            if (player != null)
+            {
+                player.TakeDamage(transform);
+
+                player._currentHp -= damageAmount;
+
+                if (player._currentHp <= 0)
+                {
+                    player.playerState = PLAYER_STATE.DEATH;
+                    Debug.Log("Player is Dead!");
+                }
+            }
         }
     }
 }
