@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9038700432563451169}
   - component: {fileID: 3160095911095861803}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 4993536026429662880}
   - component: {fileID: 6783586275394544826}
   - component: {fileID: 7575626134212242934}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,6 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Attackable
   hp: 7
+  enemy: {fileID: 0}
 --- !u!1 &6770948856795993974
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1780922286750124453}
   - component: {fileID: 3905353344999598522}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7502564245435754652}
   - component: {fileID: 963089025806208444}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
