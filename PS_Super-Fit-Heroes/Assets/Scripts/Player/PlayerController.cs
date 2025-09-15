@@ -195,7 +195,7 @@ public class PlayerController : MonoBehaviour
 
         Move(moveSpeed * 1.5f, dir);
     }
-    
+
     public void ResetStamina()
     {
         _currentStamina += Time.deltaTime * 1.5f;
@@ -321,6 +321,18 @@ public class PlayerController : MonoBehaviour
             case 3:
                 _maxHp += value;
                 break;
+        }
+    }
+    public float hp = 3f;
+
+    public void TakeDamage(float damage, int level = 1)
+    {
+        hp -= damage;
+        Debug.Log(gameObject.name + " HP: " + hp);
+
+        if (hp <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 
