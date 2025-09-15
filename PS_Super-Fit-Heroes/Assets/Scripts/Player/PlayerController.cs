@@ -114,6 +114,7 @@ public class PlayerController : MonoBehaviour
                 Move(moveSpeed, direction);
                 break;
             case PLAYER_STATE.RUN:
+                animator.SetBool("isDash", true);
                 Sprint(direction);
                 break;
             case PLAYER_STATE.JUMP:
@@ -147,11 +148,15 @@ public class PlayerController : MonoBehaviour
             else
             {
                 playerState = PLAYER_STATE.WALK;
+                animator.SetBool("isDash", false);
                 isUsingStamina = false;
             }
         }
         else
+        {
             playerState = PLAYER_STATE.IDLE;
+            animator.SetBool("isDash", false);
+        }
 
 
         if (isGround)
@@ -170,7 +175,7 @@ public class PlayerController : MonoBehaviour
             return;
 
         animator.SetBool("isWalk", true);
-        transform.localScale = new Vector3(dir * 1.8f, 1.8f, 1.8f);
+        transform.localScale = new Vector3(dir * 1f, 1f, 1f);
         transform.Translate(dir * speed * Time.deltaTime, 0, 0);
     }
 

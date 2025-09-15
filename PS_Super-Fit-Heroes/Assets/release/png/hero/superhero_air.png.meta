@@ -1,0 +1,1105 @@
+fileFormatVersion: 2
+guid: 2d2c7ec9ee6944640baade5bf8d0b5e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1057012403959488946
+    second: superhero_air_0
+  - first:
+      213: -2234153672059470862
+    second: superhero_air_1
+  - first:
+      213: -7941545831639482431
+    second: superhero_air_2
+  - first:
+      213: 8458688173542303712
+    second: superhero_air_3
+  - first:
+      213: 8871010546195972570
+    second: superhero_air_4
+  - first:
+      213: 607792224087235624
+    second: superhero_air_5
+  - first:
+      213: -2883512543246446932
+    second: superhero_air_6
+  - first:
+      213: -8238167431937268662
+    second: superhero_air_7
+  - first:
+      213: 6948761586936734990
+    second: superhero_air_8
+  - first:
+      213: 2643641730936636733
+    second: superhero_air_9
+  - first:
+      213: 1642094370225886520
+    second: superhero_air_10
+  - first:
+      213: 8166431688344012244
+    second: superhero_air_11
+  - first:
+      213: 3164633371436258024
+    second: superhero_air_12
+  - first:
+      213: -5523834332811509504
+    second: superhero_air_13
+  - first:
+      213: 7484323696929974786
+    second: superhero_air_14
+  - first:
+      213: -1589516318602898924
+    second: superhero_air_15
+  - first:
+      213: -2875648470874359276
+    second: superhero_air_16
+  - first:
+      213: -466395309642435282
+    second: superhero_air_17
+  - first:
+      213: -1302095890497402636
+    second: superhero_air_18
+  - first:
+      213: 1684030458942705350
+    second: superhero_air_19
+  - first:
+      213: -4085912941683913737
+    second: superhero_air_20
+  - first:
+      213: 156047752049579725
+    second: superhero_air_21
+  - first:
+      213: 4680027031708457371
+    second: superhero_air_22
+  - first:
+      213: 9167559603340033387
+    second: superhero_air_23
+  - first:
+      213: 2281565011576513
+    second: superhero_air_24
+  - first:
+      213: 5115896930126608865
+    second: superhero_air_25
+  - first:
+      213: 5702812561515369062
+    second: superhero_air_26
+  - first:
+      213: 8489767509600642521
+    second: superhero_air_27
+  - first:
+      213: 1603192424078782511
+    second: superhero_air_28
+  - first:
+      213: -5224109097363450943
+    second: superhero_air_29
+  - first:
+      213: 2680031761337990064
+    second: superhero_air_30
+  - first:
+      213: -8033360990590282518
+    second: superhero_air_31
+  - first:
+      213: 4809122741863695104
+    second: superhero_air_32
+  - first:
+      213: -104498129043536227
+    second: superhero_air_33
+  - first:
+      213: 6244566146192460432
+    second: superhero_air_34
+  - first:
+      213: 4490514078982258244
+    second: superhero_air_35
+  - first:
+      213: -7136795063323842312
+    second: superhero_air_36
+  - first:
+      213: -518073968560100614
+    second: superhero_air_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: superhero_air_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 671
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1ef2d5e234bae00800000000000000
+      internalID: 1057012403959488946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 703
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fbb2438211bef0e0800000000000000
+      internalID: -2234153672059470862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 672
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cff4a96426f9c190800000000000000
+      internalID: -7941545831639482431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 639
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e769c9e31c436570800000000000000
+      internalID: 8458688173542303712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 607
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad141c457192c1b70800000000000000
+      internalID: 8871010546195972570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_5
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 639
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82cd6fdbecf4f6800800000000000000
+      internalID: 607792224087235624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_6
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 607
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae89629e94bbf7d0800000000000000
+      internalID: -2883512543246446932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 583
+        width: 64
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44ef2b4e562cad80800000000000000
+      internalID: -8238167431937268662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 551
+        width: 64
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e056e32e8d5fe6060800000000000000
+      internalID: 6948761586936734990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 447
+        width: 32
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3580edc52a10b420800000000000000
+      internalID: 2643641730936636733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 512
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8359bf82124e9c610800000000000000
+      internalID: 1642094370225886520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_11
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 511
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d50d3a5a5ef45170800000000000000
+      internalID: 8166431688344012244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_12
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 479
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e21eccc8490beb20800000000000000
+      internalID: 3164633371436258024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 415
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001c9aad0f56753b0800000000000000
+      internalID: -5523834332811509504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_14
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 448
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20aac8bafb8add760800000000000000
+      internalID: 7484323696929974786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_15
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 416
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412dcf07457e0f9e0800000000000000
+      internalID: -1589516318602898924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 385
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a73aa93f4a718d0800000000000000
+      internalID: -2875648470874359276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_17
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 351
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e25badbdfe70789f0800000000000000
+      internalID: -466395309642435282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_18
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 385
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f80867bfa60eede0800000000000000
+      internalID: -1302095890497402636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_19
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 351
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cec730b7c0ee5710800000000000000
+      internalID: 1684030458942705350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 327
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb42cfd3dbeb47c0800000000000000
+      internalID: -4085912941683913737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_21
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 328
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6d9ec8a946a2200800000000000000
+      internalID: 156047752049579725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 295
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99553c1acbc2f040800000000000000
+      internalID: 4680027031708457371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_23
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 255
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6dbd4e23e6b93f70800000000000000
+      internalID: 9167559603340033387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 223
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c60c00421b180000800000000000000
+      internalID: 2281565011576513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_25
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 223
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e935bb17215ff640800000000000000
+      internalID: 5115896930126608865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_26
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 255
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66252c55fc5742f40800000000000000
+      internalID: 5702812561515369062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_27
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 192
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5266bb196b1d570800000000000000
+      internalID: 8489767509600642521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 159
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2030dff30faf3610800000000000000
+      internalID: 1603192424078782511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_29
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 160
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c3d3c7547c3087b0800000000000000
+      internalID: -5224109097363450943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_30
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 192
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bbb05100b2613520800000000000000
+      internalID: 2680031761337990064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_31
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 95
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae4d26bddb4c38090800000000000000
+      internalID: -8033360990590282518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_32
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 127
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003c90667af6db240800000000000000
+      internalID: 4809122741863695104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_33
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 96
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96caaa518fbc8ef0800000000000000
+      internalID: -104498129043536227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a4b3823d729a650800000000000000
+      internalID: 6244566146192460432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_35
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 31
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44eb0a853c2815e30800000000000000
+      internalID: 4490514078982258244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_36
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 64
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f822d7c3b205fc90800000000000000
+      internalID: -7136795063323842312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: superhero_air_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa2990787e6fc8f0800000000000000
+      internalID: -518073968560100614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      superhero_air_0: 1057012403959488946
+      superhero_air_1: -2234153672059470862
+      superhero_air_10: 1642094370225886520
+      superhero_air_11: 8166431688344012244
+      superhero_air_12: 3164633371436258024
+      superhero_air_13: -5523834332811509504
+      superhero_air_14: 7484323696929974786
+      superhero_air_15: -1589516318602898924
+      superhero_air_16: -2875648470874359276
+      superhero_air_17: -466395309642435282
+      superhero_air_18: -1302095890497402636
+      superhero_air_19: 1684030458942705350
+      superhero_air_2: -7941545831639482431
+      superhero_air_20: -4085912941683913737
+      superhero_air_21: 156047752049579725
+      superhero_air_22: 4680027031708457371
+      superhero_air_23: 9167559603340033387
+      superhero_air_24: 2281565011576513
+      superhero_air_25: 5115896930126608865
+      superhero_air_26: 5702812561515369062
+      superhero_air_27: 8489767509600642521
+      superhero_air_28: 1603192424078782511
+      superhero_air_29: -5224109097363450943
+      superhero_air_3: 8458688173542303712
+      superhero_air_30: 2680031761337990064
+      superhero_air_31: -8033360990590282518
+      superhero_air_32: 4809122741863695104
+      superhero_air_33: -104498129043536227
+      superhero_air_34: 6244566146192460432
+      superhero_air_35: 4490514078982258244
+      superhero_air_36: -7136795063323842312
+      superhero_air_37: -518073968560100614
+      superhero_air_4: 8871010546195972570
+      superhero_air_5: 607792224087235624
+      superhero_air_6: -2883512543246446932
+      superhero_air_7: -8238167431937268662
+      superhero_air_8: 6948761586936734990
+      superhero_air_9: 2643641730936636733
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
