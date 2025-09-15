@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
-    public int damageAmount = 1;
+    public float damageAmount = 1f;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -14,14 +14,7 @@ public class Damage : MonoBehaviour
             if (player != null)
             {
                 player.TakeDamage(transform);
-
-                player._currentHp -= damageAmount;
-
-                if (player._currentHp <= 0)
-                {
-                    player.playerState = PLAYER_STATE.DEATH;
-                    Debug.Log("Player is Dead!");
-                }
+                player.TakeDamage(damageAmount);
             }
         }
     }
