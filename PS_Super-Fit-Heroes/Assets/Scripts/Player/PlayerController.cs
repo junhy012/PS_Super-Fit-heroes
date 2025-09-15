@@ -21,11 +21,11 @@ public class PlayerController : MonoBehaviour
     private float attackPower = 1f;
 
     private int _maxHp = 3; // hp
-    public float _currentHp;
+    private float _currentHp;
     private int _maxStamina = 3;
     private float _currentStamina;
 
-    public PLAYER_STATE playerState = PLAYER_STATE.IDLE;
+    private PLAYER_STATE playerState = PLAYER_STATE.IDLE;
 
     public int maxHp
     {
@@ -195,7 +195,7 @@ public class PlayerController : MonoBehaviour
 
         Move(moveSpeed * 1.5f, dir);
     }
-    
+
     public void ResetStamina()
     {
         _currentStamina += Time.deltaTime * 1.5f;
@@ -212,9 +212,19 @@ public class PlayerController : MonoBehaviour
             _currentHp -= 1;
             playerState = PLAYER_STATE.DAMAGED;
             animator.SetTrigger("Damaged");
+            canAttack = true;
             float dir = transform.position.x < enemyFrom.position.x ? 1f : -1f;
-            rigidBody2D.AddForce(Vector2.left * dir * 5f, ForceMode2D.Impulse);
-            rigidBody2D.AddForce(Vector2.up * dir * 5f, ForceMode2D.Impulse);
+            rigidBody2D.linearVelocity = Vector2.zero;
+            if (dir > 0)
+            {
+                rigidBody2D.AddForce(Vector2.left * 5f, ForceMode2D.Impulse);
+            }
+            else if (dir < 0)
+            {
+                rigidBody2D.AddForce(Vector2.right * 5f, ForceMode2D.Impulse);
+            }
+
+            rigidBody2D.AddForce(Vector2.up * 5f, ForceMode2D.Impulse);
         }
     }
 

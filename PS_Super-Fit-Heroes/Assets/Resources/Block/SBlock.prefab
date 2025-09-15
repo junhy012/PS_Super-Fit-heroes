@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1782652226281993866}
   - component: {fileID: 6109157696631763077}
   - component: {fileID: 4782142336575932281}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,3 +151,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Attackable
   hp: 2
+  enemy: {fileID: 0}
