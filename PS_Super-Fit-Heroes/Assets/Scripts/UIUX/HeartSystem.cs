@@ -1,30 +1,32 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement; // for scene loading
 
 public class HeartSystem : MonoBehaviour
 {
+    [Header("Health Settings")]
     public float health;
     public int maxHealth;
-    
+
+    [Header("Heart Sprites")]
     public Sprite emptyHeart;
     public Sprite fullHeart;
     public Image[] hearts;
 
+    [Header("Player Reference")]
     public PlayerController playerHealth;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
 
-    
-    }
+    [Header("Game Over Settings")]
+    [Tooltip("The name of your Start Scene (must match Build Settings).")]
+    public string startSceneName = "StartScene";
 
-    // Update is called once per frame
     void Update()
     {
+        // Sync health with player
         health = playerHealth.currentHp;
         maxHealth = playerHealth.maxHp;
-        
+
+        // Update heart UI
         for (int i = 0; i < hearts.Length; i++)
         {
             if (i < health)
@@ -35,15 +37,36 @@ public class HeartSystem : MonoBehaviour
             {
                 hearts[i].sprite = emptyHeart;
             }
-            if (i < maxHealth)
-            {
-                hearts[i].enabled = true;
-            }
-            else
-            {
-                hearts[i].enabled = false;
-            }
+
+            // Enable only up to max health
+            hearts[i].enabled = (i < maxHealth);
+        }
+
+        // Check for game over
+        if (health <= 0)
+        {
+            OnPlayerDeath();
         }
     }
-    
+
+    /// <summary>
+    /// Handles the transition when health is 0.
+    /// </summary>
+    void OnPlayerDeath()
+    {
+        Debug.Log("Player health is 0. Loading start scene...");
+
+        // Prevent looping if Update keeps firing
+        enabled = false;
+
+        // Safety check: only load if scene is in build settings
+        if (Application.CanStreamedLevelBeLoaded(startSceneName))
+        {
+            SceneManager.LoadScene(startSceneName);
+        }
+        else
+        {
+            Debug.LogError($"Start scene '{startSceneName}' not found in Build Settings!");
+        }
+    }
 }
