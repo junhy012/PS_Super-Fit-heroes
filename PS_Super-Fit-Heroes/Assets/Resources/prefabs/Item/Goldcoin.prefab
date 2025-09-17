@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8506524981256971911}
   - component: {fileID: 1614613937659039045}
   - component: {fileID: 4964725308286501784}
-  - component: {fileID: 1847028240175877905}
   m_Layer: 0
   m_Name: Goldcoin
   m_TagString: Untagged
@@ -154,15 +153,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 28.28, y: 28.28}
   m_EdgeRadius: 0
---- !u!210 &1847028240175877905
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2729745837136733814}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0

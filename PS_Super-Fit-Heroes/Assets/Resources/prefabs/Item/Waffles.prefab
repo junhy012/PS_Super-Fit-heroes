@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7741851742068180506}
   - component: {fileID: 7801707491264440914}
   - component: {fileID: 2694383522251770729}
-  - component: {fileID: -6144708761070237244}
   m_Layer: 0
   m_Name: Waffles
   m_TagString: Untagged
@@ -154,15 +153,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!210 &-6144708761070237244
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310822171667787470}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0

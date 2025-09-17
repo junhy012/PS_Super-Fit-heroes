@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1560600461856764544}
   - component: {fileID: 8170744935066876078}
   - component: {fileID: 858631059748739049}
-  - component: {fileID: 4390624236125136671}
   m_Layer: 0
   m_Name: Steak
   m_TagString: Untagged
@@ -154,15 +153,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!210 &4390624236125136671
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4784648890590252338}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0

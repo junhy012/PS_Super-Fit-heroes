@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3122554908968532986}
   - component: {fileID: 3087045075635932037}
   - component: {fileID: 8497652991183267955}
-  - component: {fileID: -7524815989366931592}
   m_Layer: 0
   m_Name: Bacon
   m_TagString: Untagged
@@ -81,7 +80,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0b9e159b363a1ff4f8982693963e393d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -154,15 +153,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!210 &-7524815989366931592
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5457589123042181018}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
