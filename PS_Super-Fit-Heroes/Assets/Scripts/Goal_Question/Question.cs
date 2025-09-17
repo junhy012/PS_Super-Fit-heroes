@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Questions : MonoBehaviour
 {
     public GameObject questionUI;
-    public Transform nextMapSpawn;
+    // public Transform nextMapSpawn;
 
+    [SerializeField]
+    public string NextScene;
     private void ShowQuestion()
     {
         if (questionUI != null)
@@ -25,11 +28,13 @@ public class Questions : MonoBehaviour
 
             Time.timeScale = 1f;
 
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            if (player != null && nextMapSpawn != null)
-            {
-                player.transform.position = nextMapSpawn.position;
-            }
+            // GameObject player = GameObject.FindGameObjectWithTag("Player");
+            // Debug.Log(player);
+            // if (player != null)
+            // {
+                SceneManager.LoadScene(NextScene);
+                // player.transform.position = nextMapSpawn.position;
+            // }
         }
         else
         {
@@ -43,16 +48,17 @@ public class Questions : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other)
-        {
-    if (other.CompareTag("Player"))
     {
-        ShowQuestion();
-    }
+        if (other.CompareTag("Player"))
+        {
+            ShowQuestion();
+        }
     }
 
 
     public void CorrectAnswer()
     {
+        Debug.Log("Correct!");
         AnswerQuestion(true);
     }
 

@@ -11,15 +11,30 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Sprint1_Increment.unity
     guid: 7bbfd52f603cf8d499f4127f8d0ea44c
+  - enabled: 0
+    path: Assets/Scenes/Work_Scene/AshishScene.unity
+    guid: 13e7f6c4beadacb40b71ee4c6503707e
+  - enabled: 0
+    path: Assets/Scenes/Work_Scene/MinhScene.unity
+    guid: 3a15cdfac0dfe844384778c056390e00
   - enabled: 1
     path: Assets/Scenes/StartScene.unity
     guid: a04397c48e631ad408248547129a4f70
   - enabled: 1
-    path: Assets/Scenes/Work_Scene/AshishScene.unity
-    guid: 13e7f6c4beadacb40b71ee4c6503707e
+    path: Assets/Scenes/Level1.unity
+    guid: 9bc22374be532bf4aa1cca5967106d3b
   - enabled: 1
-    path: Assets/Scenes/Work_Scene/MinhScene.unity
-    guid: 3a15cdfac0dfe844384778c056390e00
+    path: Assets/Scenes/Level2.unity
+    guid: 18a64f37c366ca44a94e31e700ae97df
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: f279e2f9855de46439613010445f4f74
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: c619b130b2e4acd46ae0348163b8bba6
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 74ed4b8cbcb83ed44a8ffe30692baea5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
