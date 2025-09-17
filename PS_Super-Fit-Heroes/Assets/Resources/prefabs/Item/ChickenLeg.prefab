@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3921861382858310293}
   - component: {fileID: 4065722452153363546}
   - component: {fileID: 3449333390639551029}
+  - component: {fileID: 7283972020124668127}
   m_Layer: 0
   m_Name: ChickenLeg
   m_TagString: Untagged
@@ -153,3 +154,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!210 &7283972020124668127
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2783189145384654689}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
