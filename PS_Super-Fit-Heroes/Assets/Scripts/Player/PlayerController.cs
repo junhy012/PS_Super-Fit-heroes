@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum PLAYER_STATE
 {
@@ -25,6 +26,9 @@ public class PlayerController : MonoBehaviour
     private float _currentHp;
     private int _maxStamina = 3;
     private float _currentStamina;
+
+    //added by ashish for level completion
+    public Text WinText;
 
     private PLAYER_STATE playerState = PLAYER_STATE.IDLE;
 
@@ -341,5 +345,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+//Added by Ashish for level completion
+    public void OiggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Win")
+        {
+            WinText.gameObject.SetActive(true);
+            Time.timeScale = 0;
+        }
+    }
     #endregion
 }
