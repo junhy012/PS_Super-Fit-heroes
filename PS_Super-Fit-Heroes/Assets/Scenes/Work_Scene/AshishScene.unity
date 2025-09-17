@@ -669,6 +669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &36768180
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -761,6 +762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &78330105
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1153,6 +1155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &155317479
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1498,6 +1501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &187100923
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1785,6 +1789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &210176486
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2666,6 +2671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &244336667
 GameObject:
   m_ObjectHideFlags: 0
@@ -2770,6 +2776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &244336671
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3446,6 +3453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &293989521
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3654,6 +3662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &301794101
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4070,6 +4079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &361726926
 GameObject:
   m_ObjectHideFlags: 0
@@ -4311,6 +4321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &375638692
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4703,6 +4714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &387042013
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4795,6 +4807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &392551569
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5140,6 +5153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &402664629
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5415,6 +5429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!212 &432417054
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5897,6 +5912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &498927636
 GameObject:
   m_ObjectHideFlags: 0
@@ -6064,6 +6080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &556858044
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6351,6 +6368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &585695211
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6559,6 +6577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &592858467
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6709,6 +6728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &611135393
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7492,6 +7512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &669535419
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7689,6 +7710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &678128278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7839,6 +7861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!212 &682916298
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8523,6 +8546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &704567145
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8615,6 +8639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &706699746
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9006,6 +9031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &727303293
 GameObject:
   m_ObjectHideFlags: 0
@@ -9110,6 +9136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &727303297
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9306,6 +9333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &741159911
 GameObject:
   m_ObjectHideFlags: 0
@@ -9835,6 +9863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &767759857
 GameObject:
   m_ObjectHideFlags: 0
@@ -10244,6 +10273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!212 &812470898
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10605,6 +10635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &871302085
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10697,6 +10728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &876874111
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11375,6 +11407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &928370475
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11950,6 +11983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1049922160
 GameObject:
   m_ObjectHideFlags: 0
@@ -12054,6 +12088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1049922164
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12203,6 +12238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1054439326
 GameObject:
   m_ObjectHideFlags: 0
@@ -12353,6 +12389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1056276549
 GameObject:
   m_ObjectHideFlags: 0
@@ -12804,6 +12841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1071266043
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12880,6 +12918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!212 &1071722664
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13103,6 +13142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1079717318
 GameObject:
   m_ObjectHideFlags: 0
@@ -13149,6 +13189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!212 &1079717321
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13716,6 +13757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1116951980
 GameObject:
   m_ObjectHideFlags: 0
@@ -13820,6 +13862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1116951984
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13912,6 +13955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1122680729
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14120,6 +14164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1123740185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14270,6 +14315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1128631912
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14420,6 +14466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1130915704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14570,6 +14617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1132476030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14720,6 +14768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1139449198
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15354,6 +15403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1203629027
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15655,6 +15705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1226600494
 GameObject:
   m_ObjectHideFlags: 0
@@ -15759,6 +15810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1226600498
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15851,6 +15903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1233212704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16184,6 +16237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!212 &1247074404
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16334,6 +16388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!212 &1248266007
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16496,6 +16551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1251912637
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16646,6 +16702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1278540563
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16796,6 +16853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1281459215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16946,6 +17004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1283757742
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17101,6 +17160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1285574493
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17251,6 +17311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1290741706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17506,6 +17567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1316488987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17702,6 +17764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1331518977
 GameObject:
   m_ObjectHideFlags: 0
@@ -17852,6 +17915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1001 &1336532516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17868,6 +17932,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3700602775896523845, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700602775896523845, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6855382583855476184, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -17878,11 +17950,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6855382583855476184, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.8
+      value: 266.89
       objectReference: {fileID: 0}
     - target: {fileID: 6855382583855476184, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5
+      value: 11.3
       objectReference: {fileID: 0}
     - target: {fileID: 6855382583855476184, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17915,6 +17987,14 @@ PrefabInstance:
     - target: {fileID: 6855382583855476184, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7905135777947436873, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7905135777947436873, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -320
       objectReference: {fileID: 0}
     - target: {fileID: 8826234433374564665, guid: da728eead5f0abf4c839c2c2566173f8, type: 3}
       propertyPath: m_SortingLayer
@@ -18040,6 +18120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1344905953
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18327,6 +18408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1396761614
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18602,6 +18684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!212 &1425547818
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18764,6 +18847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1425978306
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19051,6 +19135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1443916027
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19247,6 +19332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1465003787
 GameObject:
   m_ObjectHideFlags: 0
@@ -19430,6 +19516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1484875701
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19684,6 +19771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1517144597
 GameObject:
   m_ObjectHideFlags: 0
@@ -20366,6 +20454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1566618747
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20778,6 +20867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!212 &1604052952
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21139,6 +21229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1632227587
 GameObject:
   m_ObjectHideFlags: 0
@@ -21243,6 +21334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1632227591
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21439,6 +21531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1645622424
 GameObject:
   m_ObjectHideFlags: 0
@@ -21589,6 +21682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1648454076
 GameObject:
   m_ObjectHideFlags: 0
@@ -21681,6 +21775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!212 &1648454080
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21980,6 +22075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1664665235
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22267,6 +22363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1676365381
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22496,6 +22593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1690189956
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22750,6 +22848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1706664084
 GameObject:
   m_ObjectHideFlags: 0
@@ -22842,6 +22941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!212 &1706664088
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23069,6 +23169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1742306316
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23219,6 +23320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1764572431
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23564,6 +23666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1802290388
 GameObject:
   m_ObjectHideFlags: 0
@@ -23714,6 +23817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1822220972
 GameObject:
   m_ObjectHideFlags: 0
@@ -24140,6 +24244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!212 &1851273648
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24348,6 +24453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1866913686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24635,6 +24741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1870632373
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24831,6 +24938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1890358287
 GameObject:
   m_ObjectHideFlags: 0
@@ -24981,6 +25089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &1905083667
 GameObject:
   m_ObjectHideFlags: 0
@@ -25140,6 +25249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1913565952
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25427,6 +25537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1942508119
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25714,6 +25825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &1973700381
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26048,6 +26160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &2007931735
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26256,6 +26369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &2024486560
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26759,6 +26873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &2069655683
 GameObject:
   m_ObjectHideFlags: 0
@@ -26909,6 +27024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &2075689636
 GameObject:
   m_ObjectHideFlags: 0
@@ -27241,6 +27357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!1 &2089998457
 GameObject:
   m_ObjectHideFlags: 0
@@ -27345,6 +27462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &2089998461
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27495,6 +27613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &2105847494
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27782,6 +27901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &2119364033
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27932,6 +28052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8e54eafdfea74b8b8f31b4af0a071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damageAmount: 1
 --- !u!61 &2127111187
 BoxCollider2D:
   m_ObjectHideFlags: 0

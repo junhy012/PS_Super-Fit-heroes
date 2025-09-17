@@ -358,7 +358,7 @@ public class PlayerController : MonoBehaviour
     }
 
 //Added by Ashish for level completion
-    public void OiggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Win")
         {
