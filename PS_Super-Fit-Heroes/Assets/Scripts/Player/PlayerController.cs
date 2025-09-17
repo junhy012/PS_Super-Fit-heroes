@@ -1,51 +1,60 @@
-using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float jumpHeight = 10f;
+    [Header("Movement Settings")]
+    public float moveSpeed = 5f;
+    public float jumpForce = 10f;
 
-    private Rigidbody2D rigidBody2D;
+    private Rigidbody2D rb;
+    private bool isGrounded;
 
-    private bool isGround;
+    [Header("Ground Check Settings")]
+    public Transform groundCheck;          // Empty object at player's feet
+    public float groundCheckRadius = 0.2f; // Small radius for ground detection
+    public LayerMask groundLayer;          // Assign your ground layer
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rigidBody2D = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Physics2D.Raycast(transform.position, Vector2.down, 1.1f, LayerMask.GetMask("Ground")))
-            isGround = true;
-        else
-            isGround = false;
+        Move();
+        Jump();
+        CheckGround();
+    }
 
-
+    // Horizontal movement
+    private void Move()
+    {
         float horizontal = Input.GetAxisRaw("Horizontal");
+        rb.linearVelocity = new Vector2(horizontal * moveSpeed, rb.linearVelocity.y);
+    }
 
-        if (horizontal != 0)
-            Move(horizontal);
-
-        if (isGround)
+    // Jumping
+    private void Jump()
+    {
+        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-                Jump();
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // reset vertical velocity
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
     }
 
-
-    private void Move(float value)
+    // Check if player is on the ground
+    private void CheckGround()
     {
-        transform.Translate(value * moveSpeed * Time.deltaTime, 0, 0);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 
-    private void Jump()
+    // Coin pickup
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        isGround = false;
-        rigidBody2D.AddForce(transform.up * jumpHeight, ForceMode2D.Impulse);
+        if (collision.CompareTag("coin"))  // Tag must match exactly
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
