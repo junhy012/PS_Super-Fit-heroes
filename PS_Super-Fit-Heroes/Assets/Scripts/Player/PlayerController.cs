@@ -16,6 +16,7 @@ public enum PLAYER_STATE
 
 public class PlayerController : MonoBehaviour
 {
+    public string heroName;
     private float moveSpeed = 5f;
     private float jumpHeight = 20f;
     private float attackPower = 1f;
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
 
     private PLAYER_STATE playerState = PLAYER_STATE.IDLE;
 
+    // [SerializeField] StatusPanel statusPanel;
     public int maxHp
     {
         get { return _maxHp; }
@@ -53,8 +55,8 @@ public class PlayerController : MonoBehaviour
     public int stamina = 3; // stamina -> Dash or sprint
     public int health = 3;
 
-    private int[] nextLevels = { 3, 6, 10, 15 };
-    [SerializeField] private int[] currentLevels = new int[4]; //order -> strength, agility, stamina, health
+    public int[] nextLevels = { 2, 3, 4, 6 };
+    public int[] currentLevels = new int[4]; //order -> strength, agility, stamina, health
 
     private bool isGround;
 
@@ -114,6 +116,7 @@ public class PlayerController : MonoBehaviour
                 Move(moveSpeed, direction);
                 break;
             case PLAYER_STATE.RUN:
+                animator.SetBool("isDash", true);
                 Sprint(direction);
                 break;
             case PLAYER_STATE.JUMP:
@@ -147,11 +150,15 @@ public class PlayerController : MonoBehaviour
             else
             {
                 playerState = PLAYER_STATE.WALK;
+                animator.SetBool("isDash", false);
                 isUsingStamina = false;
             }
         }
         else
+        {
             playerState = PLAYER_STATE.IDLE;
+            animator.SetBool("isDash", false);
+        }
 
 
         if (isGround)
@@ -170,7 +177,7 @@ public class PlayerController : MonoBehaviour
             return;
 
         animator.SetBool("isWalk", true);
-        transform.localScale = new Vector3(dir * 1.8f, 1.8f, 1.8f);
+        transform.localScale = new Vector3(dir * 1f, 1f, 1f);
         transform.Translate(dir * speed * Time.deltaTime, 0, 0);
     }
 

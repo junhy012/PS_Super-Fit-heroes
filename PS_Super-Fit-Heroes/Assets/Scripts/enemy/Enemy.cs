@@ -109,7 +109,7 @@ public class Enemy : MonoBehaviour
                 break;
             case ENEMY_STATE.WALK:
                 animator.SetBool("isWalk", true);
-                transform.localScale = new Vector3(moveDir * 1.8f, 1.8f, 1.8f);
+                transform.localScale = new Vector3(moveDir * 1f, 1f, 1f);
                 transform.Translate(moveDir * moveSpeed * Time.deltaTime, 0, 0);
                 break;
             case ENEMY_STATE.CHASE:
@@ -122,7 +122,7 @@ public class Enemy : MonoBehaviour
                     else
                         moveDir = -1;
 
-                    transform.localScale = new Vector3(moveDir * 1.8f, 1.8f, 1.8f);
+                    transform.localScale = new Vector3(moveDir * 1f, 1f, 1f);
                     transform.Translate(moveDir * moveSpeed * Time.deltaTime, 0, 0);
                 }
 
