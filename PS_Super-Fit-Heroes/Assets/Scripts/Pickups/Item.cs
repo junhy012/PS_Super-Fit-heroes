@@ -1,25 +1,28 @@
 using System;
+using System.Collections;
 using System.Transactions;
 using UnityEngine;
 public enum Items
 {
-    Fries,
-    Burger,
-    Pizza,
-    Chocolate,
-    IceCream,
-    
+    Bacon,
     Chicken,
+    Brownie,
+    Waffle,
+    
+    Egg,
     Steak,
-    Broccoli,
     Apple,
     Banana,
+    
+    Goldcoin,
 }
 
 public class Item : MonoBehaviour
 {
     public Items items;
     public int value;
+
+    public GameObject goldCoinPopup;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -29,52 +32,50 @@ public class Item : MonoBehaviour
             
             switch (items)
             {
-                case Items.Fries:
+                case Items.Bacon:
                     pc.ChangeAgility(value);
-                    break;
-                case Items.Burger:
-                    pc.ChangeStrength(value);
-                    break;
-                case Items.Pizza:
-                    pc.ChangeStamina(value);
-                    break;
-                case Items.Chocolate:
-                    pc.ChangeAgility(value);
-                    pc.ChangeStrength(value);
-                    pc.ChangeStamina(value);
-                    break;
-                case Items.IceCream:
-                    // pc.ChangeHealth(value);
-                    // pc.TakeDamage();
                     break;
                 case Items.Chicken:
+                    pc.ChangeStrength(value);
+                    break;
+                case Items.Brownie:
+                    pc.ChangeStamina(value);
+                    break;
+                case Items.Waffle:
+                    pc.ChangeHealth(value);
+                    break;
+                
+                case Items.Egg:
                     pc.ChangeAgility(value);
                     break;
                 case Items.Steak:
                     pc.ChangeStrength(value);
                     break;
-                case Items.Broccoli:
-                    pc.ChangeStamina(value);
-                    break;
                 case Items.Apple:
-                    pc.ChangeAgility(value);
-                    pc.ChangeStrength(value);
                     pc.ChangeStamina(value);
                     break;
                 case Items.Banana:
                     pc.ChangeHealth(value);
                     break;
-            
+                
+                case Items.Goldcoin:
+                    if (goldCoinPopup != null)
+                    {
+                        goldCoinPopup.SetActive(true);
+                    }
+                break;
+                        
             }
             Destroy(gameObject);
         }
         
     }
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-     
+        // goldCoinPopup.SetActive(false);
     }
 
     // Update is called once per frame
