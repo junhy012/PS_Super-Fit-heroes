@@ -42,7 +42,7 @@ public class Enemy : MonoBehaviour
     private void CheckGround()
     {
         Vector2 start = new Vector2(transform.position.x + moveDir, transform.position.y);
-        RaycastHit2D ground = Physics2D.Raycast(start, Vector2.down, 3, LayerMask.GetMask("Ground"));
+        RaycastHit2D ground = Physics2D.Raycast(start, Vector2.down, 2, LayerMask.GetMask("Ground"));
         RaycastHit2D obj = Physics2D.Raycast(transform.position, Vector2.right * moveDir, 1,
             LayerMask.GetMask("obj"));
 
@@ -53,7 +53,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            Debug.DrawRay(start, Vector2.down * 3, Color.green);
+            Debug.DrawRay(start, Vector2.down * 1, Color.green);
         }
 
         if (obj.collider == null)

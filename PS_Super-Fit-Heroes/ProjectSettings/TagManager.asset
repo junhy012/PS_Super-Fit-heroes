@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Enemy
+  - Win
   layers:
   - Default
   - TransparentFX
@@ -57,6 +58,9 @@ TagManager:
     locked: 0
   - name: 4Foreground
     uniqueID: 3397403427
+    locked: 0
+  - name: Completion
+    uniqueID: 11136449
     locked: 0
   m_RenderingLayers:
   - Default

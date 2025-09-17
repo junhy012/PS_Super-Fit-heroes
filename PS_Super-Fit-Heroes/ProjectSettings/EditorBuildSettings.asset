@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Work_Scene/AshishScene.unity
     guid: 13e7f6c4beadacb40b71ee4c6503707e
+  - enabled: 1
+    path: Assets/Scenes/Work_Scene/MinhScene.unity
+    guid: 3a15cdfac0dfe844384778c056390e00
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
