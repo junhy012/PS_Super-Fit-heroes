@@ -1506,6 +1506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   heroName: 
+  WinText: {fileID: 0}
   strength: 3
   agility: 3
   stamina: 3
