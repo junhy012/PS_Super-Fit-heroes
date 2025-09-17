@@ -344,6 +344,18 @@ public class PlayerController : MonoBehaviour
                 break;
         }
     }
+    public float hp = 3f;
+
+    public void TakeDamage(float damage, int level = 1)
+    {
+        hp -= damage;
+        Debug.Log(gameObject.name + " HP: " + hp);
+
+        if (hp <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 
 //Added by Ashish for level completion
     public void OiggerEnter2D(Collider2D collision)

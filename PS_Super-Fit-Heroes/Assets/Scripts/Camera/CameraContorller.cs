@@ -1,18 +1,17 @@
 using UnityEngine;
 
-public class CameraContorller : MonoBehaviour
+public class CameraController : MonoBehaviour
 {
+    [SerializeField] private Transform target;  
+    [SerializeField] private float smoothSpeed = 0.125f;
+    [SerializeField] private Vector3 offset;    
 
-    public PlayerController playerContoller;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void LateUpdate()
     {
-        
-    }
+        if (target == null) return;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Vector3 desiredPosition = target.position + offset;
+        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+        transform.position = new Vector3(smoothedPosition.x, smoothedPosition.y, transform.position.z);
     }
 }
