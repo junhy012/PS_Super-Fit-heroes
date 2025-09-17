@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class Questions : MonoBehaviour
 {
     public GameObject questionUI;
-    public Transform nextMapSpawn;
+    // public Transform nextMapSpawn;
 
     [SerializeField]
     public string NextScene;
@@ -28,12 +28,13 @@ public class Questions : MonoBehaviour
 
             Time.timeScale = 1f;
 
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            if (player != null && nextMapSpawn != null)
-            {
+            // GameObject player = GameObject.FindGameObjectWithTag("Player");
+            // Debug.Log(player);
+            // if (player != null)
+            // {
                 SceneManager.LoadScene(NextScene);
-                player.transform.position = nextMapSpawn.position;
-            }
+                // player.transform.position = nextMapSpawn.position;
+            // }
         }
         else
         {
@@ -57,6 +58,7 @@ public class Questions : MonoBehaviour
 
     public void CorrectAnswer()
     {
+        Debug.Log("Correct!");
         AnswerQuestion(true);
     }
 
