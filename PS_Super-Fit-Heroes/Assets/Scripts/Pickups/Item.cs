@@ -63,7 +63,7 @@ public class Item : MonoBehaviour
                     {
                         goldCoinPopup.SetActive(true);
                     }
-                break;
+                    break;
                         
             }
             Destroy(gameObject);
