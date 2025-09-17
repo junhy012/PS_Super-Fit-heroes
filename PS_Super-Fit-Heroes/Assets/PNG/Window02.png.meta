@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6e5ec106a5edc7943a8b00ccc69aef6d
+guid: e828c02118ca9bc449d0b4828ad21bc9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -267503815850454150
-    second: ui_font_8x_b_0
+      213: 4270006453196298783
+    second: Window02_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ui_font_8x_b_0
+      name: Window02_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 7
-        width: 160
-        height: 33
+        y: 0
+        width: 758
+        height: 336
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a731c2062b2a94cf0800000000000000
-      internalID: -267503815850454150
+      spriteID: f1a1467ee3c124b30800000000000000
+      internalID: 4270006453196298783
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ui_font_8x_b_0: -267503815850454150
+      Window02_0: 4270006453196298783
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
