@@ -28,13 +28,14 @@ public class Questions : MonoBehaviour
 
             Time.timeScale = 1f;
 
-            // GameObject player = GameObject.FindGameObjectWithTag("Player");
-            // Debug.Log(player);
-            // if (player != null)
-            // {
-                SceneManager.LoadScene(NextScene);
-                // player.transform.position = nextMapSpawn.position;
-            // }
+            // Develop by minhh but commenting it out so i can show completionscene
+            //SceneManager.LoadScene(NextScene);
+
+            //By Ashish, adding this small chunk of code to load the completion scene
+            PlayerPrefs.SetString("lc_nextSceneName", NextScene);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene("CompletionScene");
+                
         }
         else
         {
