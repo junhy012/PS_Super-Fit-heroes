@@ -22,20 +22,20 @@ public class InformationPopup : MonoBehaviour
     {
         informationText.text = "";
         StartCoroutine(TypeText());
-        Invoke("HidePopup",3);
+        // Invoke("HidePopup",3);
     }
 
     private IEnumerator TypeText()
     {
-        foreach (char c in information.ToCharArray())
+        foreach (char c in information)
         {
             informationText.text += c;
             yield return new WaitForSeconds(typingSpeed);
         }
     }
     
-    public void HidePopup()
-    {
-        gameObject.SetActive(false);
-    }
+    // public void HidePopup()
+    // {
+    //     gameObject.SetActive(false);
+    // }
 }

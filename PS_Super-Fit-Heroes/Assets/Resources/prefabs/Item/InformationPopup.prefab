@@ -91,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InformationPopup
   information: Push-up is good for your chest
   informationText: {fileID: 1905548747832641403}
+  typingSpeed: 0.05
 --- !u!1 &4030868613316565872
 GameObject:
   m_ObjectHideFlags: 0
