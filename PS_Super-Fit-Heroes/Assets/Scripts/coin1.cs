@@ -1,35 +1,46 @@
+using System.Collections;
 using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
     [Header("Text Object Prefab")]
-    public GameObject textObjectPrefab; // assign Text1 prefab here
+    public GameObject textObjectPrefab; // Assign your UI prefab here
 
     [Header("Text Duration")]
-    public float displayTime = 2f; // seconds before the text disappears
+    public float displayTime = 2f; // Seconds to keep the message visible
+
+    private bool hasTriggered = false;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && textObjectPrefab != null)
+        if (!hasTriggered && other.CompareTag("Player") && textObjectPrefab != null)
         {
-            // Find the Canvas in the scene
-            Canvas canvas = Canvas.FindFirstObjectByType<Canvas>();
+            hasTriggered = true;
+
+            // Find the first Canvas in the scene
+            Canvas canvas = FindObjectOfType<Canvas>();
             if (canvas != null)
             {
-                // Instantiate the prefab as a child of the Canvas
+                // Instantiate the text object under the canvas
                 GameObject textInstance = Instantiate(textObjectPrefab, canvas.transform);
 
-                // Optional: center it on the screen
+                // Optional: center the UI text
                 RectTransform rt = textInstance.GetComponent<RectTransform>();
                 if (rt != null)
                     rt.anchoredPosition = Vector2.zero;
 
-                // Destroy after displayTime seconds
-                Destroy(textInstance, displayTime);
+                // OPTIONAL: Remove text after displayTime
+                // If you want it to stay forever, remove this line
+                StartCoroutine(RemoveTextAfterDelay(textInstance, displayTime));
             }
 
-            // Destroy the coin
-            Destroy(gameObject);
+            // The coin is NOT destroyed or picked up
         }
+    }
+
+    private IEnumerator RemoveTextAfterDelay(GameObject textObject, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Destroy(textObject); // Remove this line if you want the text to stay forever
     }
 }
