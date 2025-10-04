@@ -26,12 +26,13 @@ public class Questions : MonoBehaviour
             if (questionUI != null)
                 questionUI.SetActive(false);
 
-            Time.timeScale = 1f;
+            Time.timeScale = 0f;
 
             // Develop by minhh but commenting it out so i can show completionscene
             //SceneManager.LoadScene(NextScene);
 
             //By Ashish, adding this small chunk of code to load the completion scene
+
             PlayerPrefs.SetString("lc_nextSceneName", NextScene);
             PlayerPrefs.Save();
             SceneManager.LoadScene("CompletionScene");
