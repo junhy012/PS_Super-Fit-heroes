@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 public class PauseMenu : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -46,7 +47,12 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("Quit Game");
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+
+#endif
         Application.Quit();
     }
+        // Application.Quit();
+    
 }
