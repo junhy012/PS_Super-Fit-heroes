@@ -23,6 +23,7 @@ public class Item : MonoBehaviour
     public int value;
 
     public GameObject goldCoinPopup;
+	public static string description;
     
     private void OnTriggerEnter2D(Collider2D other)
     {

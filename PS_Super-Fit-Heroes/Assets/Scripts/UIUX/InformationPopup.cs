@@ -20,6 +20,7 @@ public class InformationPopup : MonoBehaviour
 
     private void OnEnable()
     {
+        information = Item.description;
         informationText.text = "";
         StartCoroutine(TypeText());
         // Invoke("HidePopup",3);
