@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2831698121670926718}
   - component: {fileID: 1877055762841373168}
   - component: {fileID: 2989209065925264462}
+  - component: {fileID: 7434354865791825683}
   m_Layer: 0
   m_Name: Egg
   m_TagString: Untagged
@@ -153,3 +154,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!210 &7434354865791825683
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6066453443871785860}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0

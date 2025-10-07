@@ -5,13 +5,13 @@ public class StaminaBar : MonoBehaviour
 {
     public Slider slider;
     
-    private PlayerController pc;
+    public PlayerController pc;
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        // pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
         slider.maxValue = pc.maxStamina;
         slider.value = pc.currentStamina;
