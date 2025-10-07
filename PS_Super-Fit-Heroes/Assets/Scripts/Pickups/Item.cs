@@ -2,18 +2,19 @@ using System;
 using System.Collections;
 using System.Transactions;
 using UnityEngine;
+
 public enum Items
 {
     Bacon,
     Chicken,
     Brownie,
     Waffle,
-    
+
     Egg,
     Steak,
     Apple,
     Banana,
-    
+
     Goldcoin,
 }
 
@@ -23,14 +24,14 @@ public class Item : MonoBehaviour
     public int value;
 
     public GameObject goldCoinPopup;
-	public static string description;
-    
+    public string description;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             PlayerController pc = other.GetComponent<PlayerController>();
-            
+
             switch (items)
             {
                 case Items.Bacon:
@@ -49,7 +50,7 @@ public class Item : MonoBehaviour
                     pc.ChangeHealth(value);
                     Destroy(gameObject);
                     break;
-                
+
                 case Items.Egg:
                     pc.ChangeAgility(value);
                     Destroy(gameObject);
@@ -66,16 +67,18 @@ public class Item : MonoBehaviour
                     pc.ChangeHealth(value);
                     Destroy(gameObject);
                     break;
-                
+
                 case Items.Goldcoin:
                     if (goldCoinPopup != null)
                     {
+                        InformationPopup info = goldCoinPopup.GetComponent<InformationPopup>();
+                        info.information = description;
                         goldCoinPopup.SetActive(true);
                     }
+
                     break;
             }
         }
-   
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -99,6 +102,5 @@ public class Item : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
