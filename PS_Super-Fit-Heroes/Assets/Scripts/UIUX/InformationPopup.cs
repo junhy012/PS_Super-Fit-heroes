@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,19 +9,34 @@ public class InformationPopup : MonoBehaviour
     public string information;
 
     public TextMeshProUGUI informationText;
+
+    public float typingSpeed = 0.05f;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        informationText.text = information;
+        // informationText.text = information;
     }
 
     private void OnEnable()
     {
-        Invoke("HidePopup",3);
+        information = Item.description;
+        informationText.text = "";
+        StartCoroutine(TypeText());
+        // Invoke("HidePopup",3);
     }
-    public void HidePopup()
+
+    private IEnumerator TypeText()
     {
-        gameObject.SetActive(false);
+        foreach (char c in information)
+        {
+            informationText.text += c;
+            yield return new WaitForSeconds(typingSpeed);
+        }
     }
+    
+    // public void HidePopup()
+    // {
+    //     gameObject.SetActive(false);
+    // }
 }

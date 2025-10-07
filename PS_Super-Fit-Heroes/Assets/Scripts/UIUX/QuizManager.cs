@@ -26,6 +26,11 @@ public class QuizManager : MonoBehaviour
         questionTxt.text = question;
     }
 
+    void wrongAnswer()
+    {
+        
+    }
+
 
     // Update is called once per frame
     void Update()

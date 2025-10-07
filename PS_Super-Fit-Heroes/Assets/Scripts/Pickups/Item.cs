@@ -23,6 +23,7 @@ public class Item : MonoBehaviour
     public int value;
 
     public GameObject goldCoinPopup;
+	public static string description;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -34,28 +35,36 @@ public class Item : MonoBehaviour
             {
                 case Items.Bacon:
                     pc.ChangeAgility(value);
+                    Destroy(gameObject);
                     break;
                 case Items.Chicken:
                     pc.ChangeStrength(value);
+                    Destroy(gameObject);
                     break;
                 case Items.Brownie:
                     pc.ChangeStamina(value);
+                    Destroy(gameObject);
                     break;
                 case Items.Waffle:
                     pc.ChangeHealth(value);
+                    Destroy(gameObject);
                     break;
                 
                 case Items.Egg:
                     pc.ChangeAgility(value);
+                    Destroy(gameObject);
                     break;
                 case Items.Steak:
                     pc.ChangeStrength(value);
+                    Destroy(gameObject);
                     break;
                 case Items.Apple:
                     pc.ChangeStamina(value);
+                    Destroy(gameObject);
                     break;
                 case Items.Banana:
                     pc.ChangeHealth(value);
+                    Destroy(gameObject);
                     break;
                 
                 case Items.Goldcoin:
@@ -63,12 +72,21 @@ public class Item : MonoBehaviour
                     {
                         goldCoinPopup.SetActive(true);
                     }
-                break;
-                        
+                    break;
             }
-            Destroy(gameObject);
         }
-        
+   
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && items == Items.Goldcoin)
+        {
+            if (goldCoinPopup != null)
+            {
+                goldCoinPopup.SetActive(false);
+            }
+        }
     }
 
 
