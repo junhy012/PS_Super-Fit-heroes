@@ -1507,9 +1507,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   heroName: 
-  strength: 3
-  agility: 3
-  stamina: 3
+  strength: 2
+  agility: 4
+  stamina: 5
   health: 3
   nextLevels: 01000000020000000300000004000000
   currentLevels: 00000000000000000000000000000000
