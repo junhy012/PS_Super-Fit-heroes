@@ -22,6 +22,9 @@ public class Item : MonoBehaviour
 {
     public Items items;
     public int value;
+    
+    public AudioClip pickupItemSound;
+    public GameObject pickupEffect;
 
     public GameObject goldCoinPopup;
     public string description;
@@ -36,41 +39,50 @@ public class Item : MonoBehaviour
             {
                 case Items.Bacon:
                     pc.ChangeAgility(value);
+                    PlayPickupEffects();
                     Destroy(gameObject);
                     break;
                 case Items.Chicken:
                     pc.ChangeStrength(value);
+                    PlayPickupEffects();
                     Destroy(gameObject);
                     break;
                 case Items.Brownie:
                     pc.ChangeStamina(value);
+                    PlayPickupEffects();
                     Destroy(gameObject);
                     break;
                 case Items.Waffle:
                     pc.ChangeHealth(value);
+                    PlayPickupEffects();
                     Destroy(gameObject);
                     break;
 
                 case Items.Egg:
                     pc.ChangeAgility(value);
+                    PlayPickupEffects();
                     Destroy(gameObject);
                     break;
                 case Items.Steak:
                     pc.ChangeStrength(value);
+                    PlayPickupEffects();
                     Destroy(gameObject);
                     break;
                 case Items.Apple:
                     pc.ChangeStamina(value);
+                    PlayPickupEffects();
                     Destroy(gameObject);
                     break;
                 case Items.Banana:
                     pc.ChangeHealth(value);
+                    PlayPickupEffects();
                     Destroy(gameObject);
                     break;
 
                 case Items.Goldcoin:
                     if (goldCoinPopup != null)
                     {
+                        PlayPickupEffects();
                         InformationPopup info = goldCoinPopup.GetComponent<InformationPopup>();
                         info.information = description;
                         goldCoinPopup.SetActive(true);
@@ -89,6 +101,19 @@ public class Item : MonoBehaviour
             {
                 goldCoinPopup.SetActive(false);
             }
+        }
+    }
+
+    private void PlayPickupEffects()
+    {
+        if (pickupItemSound != null)
+        {
+            AudioSource.PlayClipAtPoint(pickupItemSound, transform.position);
+        }
+
+        if (pickupEffect != null)
+        {
+            Instantiate(pickupEffect, transform.position, Quaternion.identity);
         }
     }
 

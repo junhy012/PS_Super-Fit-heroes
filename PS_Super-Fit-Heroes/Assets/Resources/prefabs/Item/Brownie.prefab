@@ -106,7 +106,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   items: 2
   value: -1
+  pickupItemSound: {fileID: 8300000, guid: 1ce443ef5aca57341928afd9cc85a031, type: 3}
+  pickupEffect: {fileID: 2955623459812423943, guid: f5507a8c6a22c404ab324980c4e8a11b, type: 3}
   goldCoinPopup: {fileID: 0}
+  description: 
 --- !u!61 &7419833778266751202
 BoxCollider2D:
   m_ObjectHideFlags: 0

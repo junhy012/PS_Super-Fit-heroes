@@ -1486,6 +1486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   items: 8
   value: 0
+  pickupItemSound: {fileID: 8300000, guid: 9a5057e0f0393054fa3c36cd404bf829, type: 3}
   goldCoinPopup: {fileID: 5777227502289887341}
   description: Text 1
 --- !u!4 &3776827635986669335
@@ -1593,6 +1594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   items: 8
   value: 0
+  pickupItemSound: {fileID: 8300000, guid: 9a5057e0f0393054fa3c36cd404bf829, type: 3}
   goldCoinPopup: {fileID: 5777227502289887341}
   description: Text 3
 --- !u!212 &4568864046673955269
@@ -2109,6 +2111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   items: 8
   value: 0
+  pickupItemSound: {fileID: 8300000, guid: 9a5057e0f0393054fa3c36cd404bf829, type: 3}
   goldCoinPopup: {fileID: 5777227502289887341}
   description: Text 2
 --- !u!114 &6934852980444083571
