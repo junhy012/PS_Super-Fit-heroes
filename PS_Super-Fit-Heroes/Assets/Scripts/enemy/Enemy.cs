@@ -53,7 +53,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            Debug.DrawRay(start, Vector2.down * 3, Color.green);
+            Debug.DrawRay(start, Vector2.down * 1, Color.green);
         }
 
         if (obj.collider == null)

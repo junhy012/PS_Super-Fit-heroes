@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Enemy
-  - playerSpawner
+  - Win
   layers:
   - Default
   - TransparentFX
@@ -50,6 +50,12 @@ TagManager:
   - name: 2Cloud
     uniqueID: 1699644421
     locked: 0
+  - name: Ground
+    uniqueID: 3440165723
+    locked: 0
+  - name: Ground2
+    uniqueID: 1061802417
+    locked: 0
   - name: 3Background
     uniqueID: 2728674257
     locked: 0
@@ -58,6 +64,9 @@ TagManager:
     locked: 0
   - name: 4Foreground
     uniqueID: 3397403427
+    locked: 0
+  - name: Completion
+    uniqueID: 11136449
     locked: 0
   m_RenderingLayers:
   - Default
