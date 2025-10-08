@@ -28,6 +28,9 @@ public class CameraFollow : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (target == null)
+            return;
+        
         transform.position = Vector3.SmoothDamp(
              transform.position,
              target.position + offset,

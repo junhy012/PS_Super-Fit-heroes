@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level5.unity
     guid: 74ed4b8cbcb83ed44a8ffe30692baea5
+  - enabled: 1
+    path: Assets/Scenes/Work_Scene/JayScene.unity
+    guid: 1e8b01414d0f159498f651fdfb829f22
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
