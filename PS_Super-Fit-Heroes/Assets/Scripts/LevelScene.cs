@@ -11,7 +11,9 @@ public class LevelScene : MonoBehaviour
             go = Instantiate(GameManager.instance.playerCharacter, transform.position, Quaternion.identity);
         else
             go.transform.position = transform.position;
-        
+
+
+        go.GetComponent<PlayerController>().levelScene = this.transform;
         Camera.main.transform.GetComponent<CameraFollow>().target = go.transform;
     }
 }

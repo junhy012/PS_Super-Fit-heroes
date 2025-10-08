@@ -35,7 +35,8 @@ public class Damage : MonoBehaviour
 
                 player.transform.position = startPosition;
 
-
+                player.GetComponent<PlayerController>().currentHp = player.GetComponent<PlayerController>().maxHp; 
+                
                 Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
                 if (rb != null)
                 {
@@ -43,7 +44,7 @@ public class Damage : MonoBehaviour
                     rb.angularVelocity = 0f;
                 }
 
-                pc.currentHp = 3f;
+                
             }
         }
     }

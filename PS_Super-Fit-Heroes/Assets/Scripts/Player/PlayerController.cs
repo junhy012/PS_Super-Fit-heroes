@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum PLAYER_STATE
 {
@@ -16,6 +17,7 @@ public enum PLAYER_STATE
 
 public class PlayerController : MonoBehaviour
 {
+    public Transform levelScene;
     public string heroName;
     private float moveSpeed = 5f;
     private float jumpHeight = 20f;
@@ -25,6 +27,9 @@ public class PlayerController : MonoBehaviour
     private float _currentHp;
     private int _maxStamina = 3;
     private float _currentStamina;
+
+    //added by ashish for level completion
+    public Text WinText;
 
     private PLAYER_STATE playerState = PLAYER_STATE.IDLE;
 
@@ -236,6 +241,13 @@ public class PlayerController : MonoBehaviour
 
             rigidBody2D.AddForce(Vector2.up * 5f, ForceMode2D.Impulse);
         }
+        
+        if (_currentHp <= 0)
+        {
+            transform.position = levelScene.position;
+            _currentHp = _maxHp;
+            // Destroy(gameObject);
+        }
     }
 
 
@@ -357,9 +369,20 @@ public class PlayerController : MonoBehaviour
 
         if (_currentHp <= 0)
         {
-            Destroy(gameObject);
+            transform.position = levelScene.position;
+            currentHp = _maxHp;
+            // Destroy(gameObject);
         }
     }
 
+//Added by Ashish for level completion
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Win")
+        {
+            WinText.gameObject.SetActive(true);
+            Time.timeScale = 0;
+        }
+    }
     #endregion
 }

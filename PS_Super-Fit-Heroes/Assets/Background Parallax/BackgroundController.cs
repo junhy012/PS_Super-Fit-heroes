@@ -12,11 +12,17 @@ public class BackgroundController : MonoBehaviour
     void Start()
     {
         startPos = transform.position.x;
+        if (cam == null)
+        {
+            cam = Camera.main.gameObject;
+        }
+
+        startPos = transform.position.x - cam.transform.position.x * parallaxEffect;
 
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void LateUpdate()
     {
         // if 0, move with camera
         // if 1, won't move

@@ -148,7 +148,6 @@ GameObject:
   - component: {fileID: 3024229866350420492}
   - component: {fileID: 5104004191112534509}
   - component: {fileID: 8036181388509871707}
-  - component: {fileID: -2793531588421211783}
   m_Layer: 5
   m_Name: Question
   m_TagString: Untagged
@@ -238,18 +237,6 @@ MonoBehaviour:
   button1: {fileID: 6599578049704598983}
   button2: {fileID: 5217412669162959545}
   button3: {fileID: 3228496815699767192}
---- !u!210 &-2793531588421211783
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1426623982021402833}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
 --- !u!1 &5195544386508800307
 GameObject:
   m_ObjectHideFlags: 0
