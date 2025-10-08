@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     public float currentHp
     {
         get { return _currentHp; }
+        set { _currentHp = value; }
     }
 
     public int maxStamina
@@ -79,13 +80,15 @@ public class PlayerController : MonoBehaviour
         currentLevels[1] = 1; // agility
         currentLevels[2] = 1; // stamina
         currentLevels[3] = 1; // health
-
+        
+        _maxHp = health;
         _currentHp = _maxHp;
         _currentStamina = stamina;
 
         rigidBody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         cameraShake = Camera.main.GetComponent<CameraShake>();
+        DontDestroyOnLoad(this.gameObject);
     }
 
 
@@ -308,6 +311,9 @@ public class PlayerController : MonoBehaviour
                 newLevel += 1;
             }
         }
+        
+        if(newLevel >= 4)
+            newLevel = 4;
 
         if (currentLevels[statIndex] < newLevel)
         {
@@ -337,17 +343,19 @@ public class PlayerController : MonoBehaviour
                 break;
             case 3:
                 _maxHp += value;
+                _currentHp = maxHp;
                 break;
         }
     }
-    public float hp = 3f;
+
+
 
     public void TakeDamage(float damage, int level = 1)
     {
-        hp -= damage;
-        Debug.Log(gameObject.name + " HP: " + hp);
+        _currentHp -= damage;
+        Debug.Log(gameObject.name + " HP: " + _currentHp);
 
-        if (hp <= 0)
+        if (_currentHp <= 0)
         {
             Destroy(gameObject);
         }

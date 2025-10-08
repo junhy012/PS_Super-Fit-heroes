@@ -3,10 +3,15 @@ using UnityEngine;
 
 public class LevelScene : MonoBehaviour
 {
-    public GameObject spawnPoint;
     private void Awake()
     {
-        GameObject go = Instantiate(GameManager.instance.playerCharacter, spawnPoint.transform.position, Quaternion.identity);
+        GameObject go = GameObject.FindWithTag("Player");
+
+        if (go == null)
+            go = Instantiate(GameManager.instance.playerCharacter, transform.position, Quaternion.identity);
+        else
+            go.transform.position = transform.position;
+        
         Camera.main.transform.GetComponent<CameraFollow>().target = go.transform;
     }
 }

@@ -65,9 +65,13 @@ public class StatusPanel : MonoBehaviour
 
     private void SetNeeds()
     {
-        needText[0].text = $"{pc.nextLevels[pc.currentLevels[0]]}";
-        needText[1].text = $"{pc.nextLevels[pc.currentLevels[1]]}";
-        needText[2].text = $"{pc.nextLevels[pc.currentLevels[2]]}";
-        needText[3].text = $"{pc.nextLevels[pc.currentLevels[3]]}";
+
+        needText[0].text =pc.currentLevels[0] <4? $"{pc.nextLevels[pc.currentLevels[0]]}":$"{pc.nextLevels[pc.currentLevels[0]-1]}";
+        
+        needText[1].text = pc.currentLevels[1] <4?$"{pc.nextLevels[pc.currentLevels[1]]}":$"{pc.nextLevels[pc.currentLevels[1]-1]}";
+        
+        needText[2].text =pc.currentLevels[2] <4? $"{pc.nextLevels[pc.currentLevels[2]]}":$"{pc.nextLevels[pc.currentLevels[2]-1]}";
+        
+        needText[3].text =pc.currentLevels[3] <4? $"{pc.nextLevels[pc.currentLevels[3]]}":$"{pc.nextLevels[pc.currentLevels[3]-1]}";
     }
 }

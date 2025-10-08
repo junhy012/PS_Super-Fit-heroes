@@ -25,11 +25,11 @@ public class Damage : MonoBehaviour
             Debug.Log("Player hit an obstacle!");
 
             pc.TakeDamage(transform);
-            pc.hp -= damageAmount;
-            Debug.Log("Player HP: " + pc.hp);
+            pc.currentHp -= damageAmount;
+            Debug.Log("Player HP: " + pc.currentHp);
 
  
-            if (pc.hp <= 0)
+            if (pc.currentHp <= 0)
             {
                 Debug.Log("Player is Dead! Respawning...");
 
@@ -43,7 +43,7 @@ public class Damage : MonoBehaviour
                     rb.angularVelocity = 0f;
                 }
 
-                pc.hp = 3f;
+                pc.currentHp = 3f;
             }
         }
     }
