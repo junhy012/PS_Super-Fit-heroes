@@ -11099,7 +11099,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3294552902521825782, guid: 98813b1896d343447940ae46e12ef835, type: 3}
       propertyPath: description
-      value: It's something you can do on playground
+      value: 'When feeling angry, do not let it out on others. '
       objectReference: {fileID: 0}
     - target: {fileID: 3294552902521825782, guid: 98813b1896d343447940ae46e12ef835, type: 3}
       propertyPath: goldCoinPopup
@@ -13828,6 +13828,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3716383144233930174, guid: 05cd0eee4e9d99342aa1953dff37a1a3, type: 3}
+      propertyPath: m_text
+      value: Yell at a friend
+      objectReference: {fileID: 0}
     - target: {fileID: 3994939570892102658, guid: 05cd0eee4e9d99342aa1953dff37a1a3, type: 3}
       propertyPath: NextScene
       value: nextLevel
@@ -25252,7 +25256,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3294552902521825782, guid: 98813b1896d343447940ae46e12ef835, type: 3}
       propertyPath: description
-      value: This activity uses both your legs and arms together
+      value: Deep breaths are a good way to calm down.
       objectReference: {fileID: 0}
     - target: {fileID: 3294552902521825782, guid: 98813b1896d343447940ae46e12ef835, type: 3}
       propertyPath: goldCoinPopup

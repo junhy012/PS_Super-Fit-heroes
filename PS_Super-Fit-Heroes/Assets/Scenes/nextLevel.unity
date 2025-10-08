@@ -20089,6 +20089,10 @@ PrefabInstance:
       value: nextLevel
       objectReference: {fileID: 0}
     - target: {fileID: 3994939570892102658, guid: 05cd0eee4e9d99342aa1953dff37a1a3, type: 3}
+      propertyPath: questionUI
+      value: 
+      objectReference: {fileID: 1139843806}
+    - target: {fileID: 3994939570892102658, guid: 05cd0eee4e9d99342aa1953dff37a1a3, type: 3}
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1439342071}
@@ -20163,6 +20167,11 @@ GameObject:
 --- !u!1 &1139843805 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 130126857116646472, guid: 05cd0eee4e9d99342aa1953dff37a1a3, type: 3}
+  m_PrefabInstance: {fileID: 1139843801}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1139843806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5414877640089208911, guid: 05cd0eee4e9d99342aa1953dff37a1a3, type: 3}
   m_PrefabInstance: {fileID: 1139843801}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1146443615
