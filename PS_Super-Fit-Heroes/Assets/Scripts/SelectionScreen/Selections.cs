@@ -35,7 +35,7 @@ public class Selections : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     {
         GameManager.instance.SetPlayerCharacter(character);
 
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Level1");
     }
 
     public void OnPointerEnter(PointerEventData eventData)

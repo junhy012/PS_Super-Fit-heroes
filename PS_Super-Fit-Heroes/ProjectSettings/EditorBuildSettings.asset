@@ -21,10 +21,10 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: a04397c48e631ad408248547129a4f70
   - enabled: 0
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/Level11.unity
     guid: 9bc22374be532bf4aa1cca5967106d3b
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
+    path: Assets/Scenes/Level1.unity
     guid: 18a64f37c366ca44a94e31e700ae97df
   - enabled: 0
     path: Assets/Scenes/Level3.unity
@@ -42,7 +42,7 @@ EditorBuildSettings:
     path: Assets/Scenes/CharacterSelectionScene.unity
     guid: 96d9758cba6dc994c8fc8e296bbe4758
   - enabled: 1
-    path: Assets/Scenes/nextLevel.unity
+    path: Assets/Scenes/Level2.unity
     guid: 3b5d5207f5615c941a1f7e4593350568
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

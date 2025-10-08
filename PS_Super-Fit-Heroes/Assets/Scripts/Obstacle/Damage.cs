@@ -32,10 +32,10 @@ public class Damage : MonoBehaviour
             if (pc.currentHp <= 0)
             {
                 Debug.Log("Player is Dead! Respawning...");
-
-                player.transform.position = startPosition;
-
+                
                 player.GetComponent<PlayerController>().currentHp = player.GetComponent<PlayerController>().maxHp; 
+               
+                player.transform.position = startPosition;
                 
                 Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
                 if (rb != null)
@@ -43,9 +43,12 @@ public class Damage : MonoBehaviour
                     rb.linearVelocity = Vector2.zero;
                     rb.angularVelocity = 0f;
                 }
-
+        
                 
             }
+            
+            
+            
         }
     }
 }
