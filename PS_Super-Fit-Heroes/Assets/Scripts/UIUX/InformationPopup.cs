@@ -6,8 +6,12 @@ using UnityEngine.UI;
 
 public class InformationPopup : MonoBehaviour
 {
-    public string information;
+    string _information;
 
+    public string information
+    {
+        set { _information = value; }
+    }
     public TextMeshProUGUI informationText;
 
     public float typingSpeed = 0.05f;
@@ -20,15 +24,16 @@ public class InformationPopup : MonoBehaviour
 
     private void OnEnable()
     {
-        information = Item.description;
+        // information = Item.description;
         informationText.text = "";
         StartCoroutine(TypeText());
+        Debug.Log(_information);
         // Invoke("HidePopup",3);
     }
 
     private IEnumerator TypeText()
     {
-        foreach (char c in information)
+        foreach (char c in _information)
         {
             informationText.text += c;
             yield return new WaitForSeconds(typingSpeed);
