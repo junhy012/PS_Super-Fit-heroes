@@ -1339,6 +1339,7 @@ GameObject:
   - component: {fileID: 3976514527154310558}
   - component: {fileID: 8892204300934422942}
   - component: {fileID: 4527227415084687665}
+  - component: {fileID: 2864595581855558991}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player
@@ -1506,6 +1507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7377fe4f37055b42a253ab8d9501637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  levelScene: {fileID: 0}
   heroName: 
   strength: 3
   agility: 2
@@ -1560,6 +1562,20 @@ MonoBehaviour:
   - {fileID: 2009602167942712483}
   - {fileID: 6022459126082769932}
   playerHealth: {fileID: 3976514527154310558}
+--- !u!114 &2864595581855558991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2739399116512215323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4154cdf83d8e4684a98379c1aaaec2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInventory
+  collectedItems: 0
+  requiredItems: 3
 --- !u!1 &3119537622699142488
 GameObject:
   m_ObjectHideFlags: 0
