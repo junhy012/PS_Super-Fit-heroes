@@ -108,7 +108,7 @@ MonoBehaviour:
   value: 0
   pickupItemSound: {fileID: 8300000, guid: 9a5057e0f0393054fa3c36cd404bf829, type: 3}
   pickupEffect: {fileID: 0}
-  goldCoinPopup: {fileID: 0}
+  goldCoinPopup: {fileID: 3053589786879578725, guid: 2032a7b2be5004c4eb3ced805b3b4a4d, type: 3}
   description: 
 --- !u!61 &4506427904984638980
 BoxCollider2D:

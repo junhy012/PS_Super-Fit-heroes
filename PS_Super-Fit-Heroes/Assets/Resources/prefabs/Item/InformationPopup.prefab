@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3869986052410588134}
   - component: {fileID: 1456468847342638876}
   - component: {fileID: 2485829010659215090}
+  - component: {fileID: 2074039631663208031}
   m_Layer: 5
   m_Name: InformationPopup
   m_TagString: Untagged
@@ -89,9 +90,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 340ab42a1c164fd44aa30558c7fe4159, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InformationPopup
-  information: Push-up is good for your chest
   informationText: {fileID: 1905548747832641403}
   typingSpeed: 0.05
+--- !u!210 &2074039631663208031
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3053589786879578725}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 32767
+  m_SortAtRoot: 0
 --- !u!1 &4030868613316565872
 GameObject:
   m_ObjectHideFlags: 0
