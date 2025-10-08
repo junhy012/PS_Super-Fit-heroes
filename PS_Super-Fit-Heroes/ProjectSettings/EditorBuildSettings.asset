@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Resources/prefabs/Coin/coin/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 0
     path: Assets/Scenes/Sprint1_Increment.unity
@@ -20,24 +20,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartScene.unity
     guid: a04397c48e631ad408248547129a4f70
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level1.unity
     guid: 9bc22374be532bf4aa1cca5967106d3b
   - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: 18a64f37c366ca44a94e31e700ae97df
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level3.unity
     guid: f279e2f9855de46439613010445f4f74
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level4.unity
     guid: c619b130b2e4acd46ae0348163b8bba6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level5.unity
     guid: 74ed4b8cbcb83ed44a8ffe30692baea5
   - enabled: 1
     path: Assets/Scenes/CompletionScene.unity
     guid: 5666c18e99b79584fa2f40452d2088db
+  - enabled: 1
+    path: Assets/Scenes/CharacterSelectionScene.unity
+    guid: 96d9758cba6dc994c8fc8e296bbe4758
+  - enabled: 1
+    path: Assets/Scenes/nextLevel.unity
+    guid: 3b5d5207f5615c941a1f7e4593350568
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

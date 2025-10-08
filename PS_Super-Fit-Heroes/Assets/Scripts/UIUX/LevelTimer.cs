@@ -3,17 +3,22 @@ using UnityEngine;
 
 public class LevelTimer : MonoBehaviour
 {
-    public float totalTime = 360f;
+    public float totalTime;
 
     private float currentTime;
     
     public TextMeshProUGUI timerText;
+    
+    public Transform spawnPoint;
+    
+    GameObject player;
 
     private bool isRunning = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentTime = totalTime;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -42,6 +47,7 @@ public class LevelTimer : MonoBehaviour
 
     void OnTimerEnd()
     {
-        Debug.Log("done");
+        currentTime = totalTime;
+        player.transform.position = spawnPoint.position;
     }
 }
