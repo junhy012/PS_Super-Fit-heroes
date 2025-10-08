@@ -52,7 +52,5 @@ public class PauseMenu : MonoBehaviour
 
 #endif
         Application.Quit();
-    }
-        // Application.Quit();
-    
+    }    
 }
